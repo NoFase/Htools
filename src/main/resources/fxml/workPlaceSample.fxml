@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #130d60;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.controllers.WorkPlaceController">
+   <children>
+      <Text fill="#65cc26" layoutX="308.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Work place with Server" wrappingWidth="530.6708984375">
+         <font>
+            <Font name="Bauhaus 93" size="50.0" />
+         </font>
+      </Text>
+      <MenuBar AnchorPane.bottomAnchor="778.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+                  <Menu mnemonicParsing="false" text="Servers">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#appAddingServer" text="Add server" />
+                        <MenuItem mnemonicParsing="false" onAction="#appListOfServers" text="List servers" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="itConnect" disable="false" mnemonicParsing="false" onAction="#appConnectingServer" text="Connect" />
+                        <MenuItem fx:id="itReconnect" disable="true" mnemonicParsing="false" onAction="#appReconnecting" text="Reconnect" />
+                        <MenuItem fx:id="itDisconnect" disable="true" mnemonicParsing="false" onAction="#appDisconnectingServer" text="Disconnect" />
+                    </items>
+                  </Menu>
+              <MenuItem mnemonicParsing="false" onAction="#appClose" text="Close" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Commands">
+                <items>
+                    <MenuItem fx:id="itShowUsr" disable="true" mnemonicParsing="false" onAction="#appShowUsr" text="Show users" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane layoutY="180.0" prefHeight="620.0" prefWidth="1200.0" style="-fx-background-color: #fbfdc4;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="180.0">
+         <children>
+            <TextArea fx:id="fldWorkPlace" layoutX="25.0" layoutY="27.0" prefHeight="545.0" prefWidth="786.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="410.0" AnchorPane.topAnchor="27.0" />
+            <TextArea fx:id="fldWorkLog" layoutX="844.0" layoutY="27.0" prefHeight="545.0" prefWidth="282.0" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="844.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="27.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
