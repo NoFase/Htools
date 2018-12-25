@@ -1,7 +1,6 @@
 package dialogWithCommutators.processor;
 
 import staticVariable.StaticVariables;
-import sun.plugin2.message.Message;
 
 import java.util.Map;
 
