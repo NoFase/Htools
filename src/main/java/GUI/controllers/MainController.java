@@ -43,11 +43,13 @@ public class MainController {
 
     @FXML
     void workWithUser(ActionEvent event){
-        try {
-            FXMLDocumentController(new Stage(), "fxml/workWithUser.fxml");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
+        reOpenNewWindow("fxml/workWithUser.fxml");
+//        try {
+//            FXMLDocumentController(new Stage(), "fxml/workWithUser.fxml");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     @FXML
@@ -106,4 +108,5 @@ public class MainController {
             e.printStackTrace();
         }
     }
+
 }

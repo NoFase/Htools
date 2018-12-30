@@ -36,6 +36,7 @@
           <Menu mnemonicParsing="false" text="Commands">
             <items>
               <MenuItem fx:id="itShowUsr" disable="true" mnemonicParsing="false" onAction="#appShowUsr" text="Show users" />
+                <MenuItem fx:id="itWorkUser" disable="false" mnemonicParsing="false" onAction="#workWithUser" text="Work with users" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
