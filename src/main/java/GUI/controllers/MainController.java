@@ -42,6 +42,15 @@ public class MainController {
     void appShowUsr(ActionEvent event){}
 
     @FXML
+    void workWithUser(ActionEvent event){
+        try {
+            FXMLDocumentController(new Stage(), "fxml/workWithUser.fxml");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
     void appReconnecting(ActionEvent event) {}
 
     @FXML

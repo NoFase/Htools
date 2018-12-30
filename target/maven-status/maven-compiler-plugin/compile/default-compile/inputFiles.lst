@@ -11,6 +11,7 @@ D:\JavaProjects\Htools\src\main\java\network\TCPConnection.java
 D:\JavaProjects\Htools\src\main\java\dialogWithCommutators\processor\FilterLstPra.java
 D:\JavaProjects\Htools\src\main\java\dialogWithCommutators\processor\FilterMessagesFromServer.java
 D:\JavaProjects\Htools\src\main\java\SQLdialog\HolderBD.java
+D:\JavaProjects\Htools\src\main\java\SQLdialog\TMPSql.java
 D:\JavaProjects\Htools\src\main\java\dialogWithCommutators\customers\CallIn.java
 D:\JavaProjects\Htools\src\main\java\dialogWithCommutators\processor\FilterLstMsbr.java
 D:\JavaProjects\Htools\src\main\java\GUI\controllers\TblCusController.java
@@ -27,9 +28,13 @@ D:\JavaProjects\Htools\src\main\java\GUI\controllers\MainController.java
 D:\JavaProjects\Htools\src\main\java\dialogWithCommutators\commands\Command.java
 D:\JavaProjects\Htools\src\main\java\GUI\controllers\ListofServersController.java
 D:\JavaProjects\Htools\src\main\java\staticVariable\PrimaryStage.java
+D:\JavaProjects\Htools\src\main\java\SQLdialog\Request.java
 D:\JavaProjects\Htools\src\main\java\staticVariable\StaticVariables.java
 D:\JavaProjects\Htools\src\main\java\GUI\controllers\WorkPlaceController.java
+D:\JavaProjects\Htools\src\main\java\SQLdialog\HolderMS2000.java
+D:\JavaProjects\Htools\src\main\java\SQLdialog\MessageRequest.java
 D:\JavaProjects\Htools\src\main\java\GUI\controllers\AddingController.java
+D:\JavaProjects\Htools\src\main\java\SQLdialog\Holder.java
 D:\JavaProjects\Htools\src\main\java\network\regt.java
 D:\JavaProjects\Htools\src\main\java\dialogWithCommutators\commands\LstPra.java
 D:\JavaProjects\Htools\src\main\java\dialogWithCommutators\customers\Customer.java
