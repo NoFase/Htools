@@ -86,7 +86,7 @@
                   <Line endX="72.0" layoutX="289.0" layoutY="52.0" startX="-159.0" />
                   <CheckBox fx:id="chkGw" disable="true" layoutX="142.0" layoutY="223.0" mnemonicParsing="false" text="шлюз" />
                   <CheckBox fx:id="chkInterface" disable="true" layoutX="142.0" layoutY="245.0" mnemonicParsing="false" text="интерфейс" />
-                  <Button fx:id="btnRequestData" layoutX="192.0" layoutY="292.0" mnemonicParsing="false" text="запросить данные" />
+                  <Button fx:id="btnRequestData" layoutX="192.0" layoutY="292.0" mnemonicParsing="false" onAction="#appBtnRequest" text="запросить данные" />
                   <TextField fx:id="fldCus" accessibleHelp="номер категории" layoutX="248.0" layoutY="106.0" prefHeight="22.0" prefWidth="63.0" />
                   <TextField fx:id="fldTg" accessibleHelp="номер транка" disable="true" layoutX="247.0" layoutY="173.0" prefHeight="22.0" prefWidth="63.0" />
                   <TextField fx:id="fldRsc" accessibleHelp="номер маршрута" disable="true" layoutX="247.0" layoutY="196.0" prefHeight="22.0" prefWidth="63.0" />

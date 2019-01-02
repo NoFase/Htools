@@ -1,10 +1,20 @@
 package dialogWithCommutators.customers;
 
 public class CustomerPra implements Customer{
-    private String number, lp, tg, rsc, csc;
-    private Boolean status;
-    private String category;
+    private String number, lp, tg, rsc, csc, status, category, charg;;
+    public final String TYPE = "PRA";
     private Authority callIn, callOut;
+
+    public CustomerPra(String number, String lp, String tg, String rsc, String csc, String status, String category, String charg, Authority callIn, Authority callOut) {
+        this.number = number;
+        this.lp = lp;
+        this.tg = tg;
+        this.rsc = rsc;
+        this.csc = csc;
+        this.status = status;
+        this.category = category;
+        this.charg = charg;
+    }
 
     public CustomerPra(String number, String lp, String tg, String rsc, String csc) {
         this.number = number;
@@ -12,6 +22,10 @@ public class CustomerPra implements Customer{
         this.tg = tg;
         this.rsc = rsc;
         this.csc = csc;
+    }
+
+    public String getTYPE() {
+        return TYPE;
     }
 
     public String getNumber() {
@@ -34,7 +48,7 @@ public class CustomerPra implements Customer{
         return csc;
     }
 
-    public void setStatus(Boolean status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
@@ -50,7 +64,7 @@ public class CustomerPra implements Customer{
         this.callOut = callOut;
     }
 
-    public Boolean getStatus() {
+    public String getStatus() {
         return status;
     }
 

@@ -11,7 +11,8 @@ public class Holder {
     private Connection connection = null;
     private Statement statement = null;
 
-    public void connecting(String connectionString, String login, String password){
+    public void connecting(String ipServer, String login, String password){
+        String connectionString =  "jdbc:jtds:sqlserver://" + ipServer + ":1433;databaseName=Bam";
         try {
             connection = DriverManager.getConnection(connectionString, login, password);
             if (connection != null) {

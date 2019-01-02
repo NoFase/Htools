@@ -3,8 +3,9 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 
-<TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="GUI.controllers.TblCusController">
+<TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="GUI.controllers.TblCusController">
   <columns>
+    <TableColumn fx:id="TYPE" prefWidth="75.0" text="Subscriber type" />
     <TableColumn fx:id="number" prefWidth="75.0" text="Number" />
     <TableColumn fx:id="lp" prefWidth="75.0" text="LP" />
       <TableColumn fx:id="tg" prefWidth="75.0" text="TG" />

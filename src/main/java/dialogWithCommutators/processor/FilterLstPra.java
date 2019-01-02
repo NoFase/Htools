@@ -52,10 +52,10 @@ public class FilterLstPra {
         else if (message.contains("Subscriber status") && actualNumber != null){
 //            System.out.println(message.split("=")[1].trim());
             if(message.split("=")[1].trim().contains("Normal")) {
-                customers.get(actualNumber).setStatus(true);
+                customers.get(actualNumber).setStatus("1");
 //                System.out.println(actualNumber + " - " + customers.get(actualNumber).getStatus());
             }
-            else customers.get(actualNumber).setStatus(false);
+            else customers.get(actualNumber).setStatus("0");
         }
         else if (message.contains("Custom subscriber type") && actualNumber != null) {
             customers.get(actualNumber).setCategory(message.split("=")[1]);
