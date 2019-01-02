@@ -12,6 +12,15 @@
       <TableColumn fx:id="rsc" prefWidth="75.0" text="RSC" />
       <TableColumn fx:id="csc" prefWidth="75.0" text="CSC" />
       <TableColumn fx:id="status" prefWidth="75.0" text="Status" />
-      <TableColumn fx:id="category" prefWidth="75.0" text="Category" />
+      <TableColumn fx:id="intraOfficeI" prefWidth="75.0" text="intraOfficeI" />
+      <TableColumn fx:id="localI" prefWidth="75.0" text="localI" />
+      <TableColumn fx:id="localTollI" prefWidth="75.0" text="localTollI" />
+      <TableColumn fx:id="nationalI" prefWidth="75.0" text="nationalI" />
+      <TableColumn fx:id="internationalI" prefWidth="75.0" text="internationalI" />
+      <TableColumn fx:id="intraOfficeO" prefWidth="75.0" text="intraOfficeO" />
+      <TableColumn fx:id="localO" prefWidth="75.0" text="localO" />
+      <TableColumn fx:id="localTollO" prefWidth="75.0" text="localTollO" />
+      <TableColumn fx:id="nationalO" prefWidth="75.0" text="nationalO" />
+      <TableColumn fx:id="internationalO" prefWidth="75.0" text="internationalO" />
   </columns>
 </TableView>

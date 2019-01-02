@@ -203,6 +203,34 @@ public class WorkWithUserController extends MainController {
                 }
             }
         });
+        chkTg.selectedProperty().addListener(new ChangeListener<Boolean>() {
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if (chkTg.isSelected()) {
+                    chkRsc.setSelected(false);
+                    chkRsc.setDisable(true);
+                    fldRsc.setText("");
+                    fldRsc.setDisable(true);
+                } else {
+                    chkRsc.setDisable(false);
+                    fldRsc.setDisable(false);
+                }
+            }
+        });
+        chkRsc.selectedProperty().addListener(new ChangeListener<Boolean>() {
+            @Override
+            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+                if (chkRsc.isSelected()){
+                    chkTg.setSelected(false);
+                    chkTg.setDisable(true);
+                    fldTg.setText("");
+                    fldTg.setDisable(true);
+                } else {
+                    chkTg.setDisable(false);
+                    fldTg.setDisable(false);
+                }
+            }
+        });
     }
 }
 

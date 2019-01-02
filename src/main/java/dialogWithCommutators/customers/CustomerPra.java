@@ -4,6 +4,8 @@ public class CustomerPra implements Customer{
     private String number, lp, tg, rsc, csc, status, category, charg;;
     public final String TYPE = "PRA";
     private Authority callIn, callOut;
+    private Boolean intraOfficeI, localI, localTollI, nationalI, internationalI;
+    private Boolean intraOfficeO, localO, localTollO, nationalO, internationalO;
 
     public CustomerPra(String number, String lp, String tg, String rsc, String csc, String status, String category, String charg, Authority callIn, Authority callOut) {
         this.number = number;
@@ -14,6 +16,16 @@ public class CustomerPra implements Customer{
         this.status = status;
         this.category = category;
         this.charg = charg;
+        intraOfficeI = callIn.getIntraOffice();
+        internationalI = callIn.getInternational();
+        localI = callIn.getLocal();
+        localTollI = callIn.getLocalToll();
+        nationalI = callIn.getNational();
+        intraOfficeO = callOut.getIntraOffice();
+        localO = callOut.getLocal();
+        localTollO = callOut.getLocalToll();
+        nationalO = callOut.getNational();
+        internationalO = callOut.getInternational();
     }
 
     public CustomerPra(String number, String lp, String tg, String rsc, String csc) {
@@ -78,5 +90,45 @@ public class CustomerPra implements Customer{
 
     public Authority getCallOut() {
         return callOut;
+    }
+
+    public Boolean getIntraOfficeI() {
+        return intraOfficeI;
+    }
+
+    public Boolean getLocalI() {
+        return localI;
+    }
+
+    public Boolean getLocalTollI() {
+        return localTollI;
+    }
+
+    public Boolean getNationalI() {
+        return nationalI;
+    }
+
+    public Boolean getInternationalI() {
+        return internationalI;
+    }
+
+    public Boolean getIntraOfficeO() {
+        return intraOfficeO;
+    }
+
+    public Boolean getLocalO() {
+        return localO;
+    }
+
+    public Boolean getLocalTollO() {
+        return localTollO;
+    }
+
+    public Boolean getNationalO() {
+        return nationalO;
+    }
+
+    public Boolean getInternationalO() {
+        return internationalO;
     }
 }

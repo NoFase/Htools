@@ -33,7 +33,7 @@ public class HolderBD {
             1		-	ID
             2		-	iModuleNum
             3		-	iUSN
-            4		-	sDN
+            4		-	sDN *
             5		-	iPRATg
             6		-	iRouteSelCode
             7		-	iUserType
@@ -48,7 +48,7 @@ public class HolderBD {
             16		-	iPriortyLevel
             17		-	iPINCtlFlag
             18		-	iReserved1
-            19		-	iCmdCat
+            19		-	iCmdCat *
             20		-	iCentrexGrpNo
             21		-	iCxSubGrp
             22		-	sEnhancedVoiceAttribute
@@ -59,8 +59,8 @@ public class HolderBD {
             27		-	iCodecPrefer
             28		-	sCallOutPur
             29		-	sCallInPur
-            30		-	sCallOutRight
-            31		-	sCallInRight
+            30		-	sCallOutRight   *
+            31		-	sCallInRight    *
             32		-	iRecvDevType
             33		-	iCallWatchFlag
             34		-	iReserved
@@ -91,7 +91,7 @@ public class HolderBD {
             59		-	iMaxAllowance
             60		-	iMaxTimeRestrict
             61		-	iRMSource
-            62		-	sNPNumber
+            62		-	sNPNumber   *
             63		-	iUCModule
             64		-	iUCUSN
             65		-	iKValue
@@ -108,7 +108,7 @@ public class HolderBD {
             76		-	sBarringCallInRight
             77		-	iReserved5
             78		-	iReserved6
-            79		-	iStatus
+            79		-	iStatus *
 
          */
 

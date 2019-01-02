@@ -50,6 +50,37 @@ public class TblCusController {
     @FXML
     private TableColumn<Customer, String> category = new TableColumn<>("Category");
 
+   @FXML
+    private TableColumn<Customer, Boolean> intraOfficeI = new TableColumn<>("intraOfficeI");
+
+   @FXML
+    private TableColumn<Customer, Boolean> localI = new TableColumn<>("localI");
+
+   @FXML
+    private TableColumn<Customer, Boolean> localTollI = new TableColumn<>("localTollI");
+
+   @FXML
+    private TableColumn<Customer, Boolean> nationalI = new TableColumn<>("nationalI");
+
+   @FXML
+    private TableColumn<Customer, Boolean> internationalI = new TableColumn<>("internationalI");
+
+   @FXML
+    private TableColumn<Customer, Boolean> intraOfficeO = new TableColumn<>("intraOfficeO");
+
+   @FXML
+    private TableColumn<Customer, Boolean> localO = new TableColumn<>("localO");
+
+   @FXML
+    private TableColumn<Customer, Boolean> localTollO = new TableColumn<>("localTollO");
+
+   @FXML
+    private TableColumn<Customer, Boolean> nationalO = new TableColumn<>("nationalO");
+
+   @FXML
+    private TableColumn<Customer, Boolean> internationalO = new TableColumn<>("internationalO");
+
+
 
     @FXML
     void initialize() {
@@ -62,6 +93,17 @@ public class TblCusController {
         csc.setCellValueFactory(new PropertyValueFactory<>("csc"));
         status.setCellValueFactory(new PropertyValueFactory<>("status"));
         category.setCellValueFactory(new PropertyValueFactory<>("category"));
+
+        intraOfficeI.setCellValueFactory(new PropertyValueFactory<>("intraOfficeI"));
+        localI.setCellValueFactory(new PropertyValueFactory<>("localI"));
+        localTollI.setCellValueFactory(new PropertyValueFactory<>("localTollI"));
+        nationalI.setCellValueFactory(new PropertyValueFactory<>("nationalI"));
+        internationalI.setCellValueFactory(new PropertyValueFactory<>("internationalI"));
+        intraOfficeO.setCellValueFactory(new PropertyValueFactory<>("intraOfficeO"));
+        localO.setCellValueFactory(new PropertyValueFactory<>("localO"));
+        localTollO.setCellValueFactory(new PropertyValueFactory<>("localTollO"));
+        nationalO.setCellValueFactory(new PropertyValueFactory<>("nationalO"));
+        internationalO.setCellValueFactory(new PropertyValueFactory<>("internationalO"));
 
         ObservableList<Customer> list = getCustomerInnerList();
         table.setItems(list);

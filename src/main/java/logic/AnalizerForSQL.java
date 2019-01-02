@@ -9,17 +9,22 @@ import logs.ShowProblemClassAndMethod;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.regex.Pattern;
 
 import static staticVariable.StaticVariables.customers;
 
 public class AnalizerForSQL {
 
+    private final String PATTERNAUTH = "((01111)|(10111)|(11011)|(11101)|(11110))([0-1]{27})";
     private String requestMessage;
     private Holder holder;
     private ResultSet rs;
     private String ipServer;
     private StringBuilder stringBuilderReq = new StringBuilder("SELECT * FROM ");
     private String tblPra = "tbl_PRAUserData";
+    private String tblSip = "tbl_SIPUserData";
+    private Pattern pattern;
+
 
     public AnalizerForSQL(String ipServer, boolean pra, boolean sip, boolean esl, boolean prk, boolean restrict, boolean cus, boolean charg, boolean tg, boolean rsc, boolean gw, boolean interfaces, String txtCus, String txtTg, String txtRsc, String txtGw, String txtInterface) {
         new MyAlert("такой выбор еще не запрогроммирован!");
@@ -35,34 +40,33 @@ public class AnalizerForSQL {
             if (txtCus.equals("") || txtCus == null) requestMessage = stringBuilderReq.toString();
 //            нужна проверка txtCus на то что удовлетворяет требованиям категории
             else {
-                stringBuilderReq.delete(stringBuilderReq.length()-1 , stringBuilderReq.length());
-                stringBuilderReq.append(" AND iCmdCat = ");
-                stringBuilderReq.append(txtCus);
-                stringBuilderReq.append(")");
-                requestMessage = stringBuilderReq.toString();
+                constructingString("iCmdCat", txtCus);
             }
             if (tg && !txtTg.equals("")){
-//                удаляем последнюю скобку в стринге
-                stringBuilderReq.delete(stringBuilderReq.length()-1 , stringBuilderReq.length());
-                stringBuilderReq.append(" AND iPRATg = ");
-                stringBuilderReq.append(txtTg);
-                stringBuilderReq.append(")");
-                requestMessage = stringBuilderReq.toString();
+                constructingString("iPRATg", txtTg);
             }
             else if (rsc && !txtRsc.equals("")){
-                stringBuilderReq.delete(stringBuilderReq.length()-1 , stringBuilderReq.length());
-                stringBuilderReq.append(" AND iRouteSelCode = ");
-                stringBuilderReq.append(txtRsc);
-                stringBuilderReq.append(")");
-                requestMessage = stringBuilderReq.toString();
+                constructingString("iRouteSelCode", txtRsc);
             }
 
         }
         else if (prk && !restrict && !cus && !charg) {
-            requestMessage = "SELECT *" +
-                    "FROM tbl_PRAUserData WHERE iStatus = 0";
+            stringBuilderReq.append(" WHERE (iStatus = 0)");
+            requestMessage = stringBuilderReq.toString();
+            if (tg && !txtTg.equals("")){
+                constructingString("iPRATg", txtTg);
+            }
+            else if (rsc && !txtRsc.equals("")){
+                constructingString("iRouteSelCode", txtRsc);
+            }
         }
-//        requestMessage = "SELECT * FROM tbl_PRAUserData";
+        else if (!prk && restrict && !cus && !charg){
+//            pattern = Pattern.compile(PATTERNAUTH);
+//            stringBuilderReq.append(" WHERE (sCallOutRight = dbo.regexp_match(");
+//            stringBuilderReq.append(PATTERNAUTH);
+//            stringBuilderReq.append("))");
+//            requestMessage = stringBuilderReq.toString();
+        }
 //               ==========>
         System.out.println(requestMessage);
         connectingToSQL();
@@ -70,6 +74,9 @@ public class AnalizerForSQL {
     }
 
     public AnalizerForSQL(String ipServer, boolean sip, boolean prk, boolean restrict, boolean cus, boolean charg, boolean gw, String txtCus, String txtGw) {
+        this.ipServer = ipServer;
+        stringBuilderReq.append(tblSip);
+
         new MyAlert("такой выбор еще не запрогроммирован!");
     }
 
@@ -88,7 +95,7 @@ public class AnalizerForSQL {
     public AnalizerForSQL(String ipServer, boolean sip, boolean esl, boolean prk, boolean restrict, boolean cus, boolean charg,  boolean gw, boolean interfaces,String txtCus, String txtGw, String txtInterface) {
         new MyAlert("такой выбор еще не запрогроммирован!");
     }
-
+//[1]{5}[0-1]{27}
     private void connectingToSQL(){
         holder = new HolderMS2000();
         holder.connecting(ipServer, "searcher", "SoftX3000");
@@ -98,18 +105,11 @@ public class AnalizerForSQL {
     private void initCustomerPra(){
         try {
             while (rs.next()){
+                System.out.println(rs.getString("sCallInRight"));
                 Boolean[] callIn = new ParseAuthority().transcoding(rs.getString("sCallInRight"));
                 Boolean[] callOut = new ParseAuthority().transcoding(rs.getString("sCallOutRight"));
                 Authority callInA = new CallIn(callIn[0], callIn[1], callIn[2], callIn[3], callIn[4]);
                 Authority callOutA = new CallOUT(callOut[0], callOut[1], callOut[2], callOut[3], callOut[4]);
-//                System.out.println("==========> " + rs.getString("sDn") + "\t" +
-//                                rs.getString("sNPNumber")+ "\t" +
-//                        rs.getString("iPRATg")+ "\t" +
-//                        rs.getString("iRouteSelCode")+ "\t" +
-//                        rs.getString("iCallSrcCode")+ "\t" +
-//                        rs.getString("iStatus")+ "\t" +
-//                        rs.getString("iCmdCat")+ "\t" +
-//                        rs.getString("iChargeType"));
 
                 customers.put(rs.getString("sDn"),
                         new CustomerPra(rs.getString("sDn"),
@@ -126,22 +126,15 @@ public class AnalizerForSQL {
             new ShowProblemClassAndMethod(e, this.getClass());
         }
     }
+
+    private void constructingString (String parameter, String txt) {
+        stringBuilderReq.delete(stringBuilderReq.length()-1 , stringBuilderReq.length());
+        stringBuilderReq.append(" AND ");
+        stringBuilderReq.append(parameter);
+        stringBuilderReq.append(" = ");
+        stringBuilderReq.append(txt);
+        stringBuilderReq.append(")");
+        requestMessage = stringBuilderReq.toString();
+    }
+
 }
-
-
-/*
-
-        Holder holder = new HolderMS2000();
-        holder.connecting(ipServer, "searcher", "SoftX3000");
-        ResultSet rs = new Request().sendingRequest(holder.getStatement(), requestMessage);
-        try {
-            while (rs.next()){
-                System.out.println(rs.getString("sDN") + "\t-\t" + rs.getString("iStatus")
-                        + "\t-\t" + rs.getString("iCallSrcCode"));
-            }
-            holder.closeConnecting();
-        } catch (SQLException e) {
-            System.out.println("Что то пошло не так...");
-            e.printStackTrace();
-        }
- */
