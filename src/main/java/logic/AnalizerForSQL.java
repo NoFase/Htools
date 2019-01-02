@@ -18,6 +18,8 @@ public class AnalizerForSQL {
     private Holder holder;
     private ResultSet rs;
     private String ipServer;
+    private StringBuilder stringBuilderReq = new StringBuilder("SELECT * FROM ");
+    private String tblPra = "tbl_PRAUserData";
 
     public AnalizerForSQL(String ipServer, boolean pra, boolean sip, boolean esl, boolean prk, boolean restrict, boolean cus, boolean charg, boolean tg, boolean rsc, boolean gw, boolean interfaces, String txtCus, String txtTg, String txtRsc, String txtGw, String txtInterface) {
         new MyAlert("такой выбор еще не запрогроммирован!");
@@ -25,15 +27,44 @@ public class AnalizerForSQL {
 
     public AnalizerForSQL(String ipServer, boolean pra, boolean prk, boolean restrict, boolean cus, boolean charg, boolean tg, boolean rsc, String txtCus, String txtTg, String txtRsc) {
         this.ipServer = ipServer;
+        stringBuilderReq.append(tblPra);
+//        ============>
+//        System.out.println(stringBuilderReq.toString());
         if (prk && restrict && cus && charg){
-            requestMessage = "SELECT *" +
-                    "FROM tbl_PRAUserData";
+            stringBuilderReq.append(" WHERE (iStatus = 0)");
+            if (txtCus.equals("") || txtCus == null) requestMessage = stringBuilderReq.toString();
+//            нужна проверка txtCus на то что удовлетворяет требованиям категории
+            else {
+                stringBuilderReq.delete(stringBuilderReq.length()-1 , stringBuilderReq.length());
+                stringBuilderReq.append(" AND iCmdCat = ");
+                stringBuilderReq.append(txtCus);
+                stringBuilderReq.append(")");
+                requestMessage = stringBuilderReq.toString();
+            }
+            if (tg && !txtTg.equals("")){
+//                удаляем последнюю скобку в стринге
+                stringBuilderReq.delete(stringBuilderReq.length()-1 , stringBuilderReq.length());
+                stringBuilderReq.append(" AND iPRATg = ");
+                stringBuilderReq.append(txtTg);
+                stringBuilderReq.append(")");
+                requestMessage = stringBuilderReq.toString();
+            }
+            else if (rsc && !txtRsc.equals("")){
+                stringBuilderReq.delete(stringBuilderReq.length()-1 , stringBuilderReq.length());
+                stringBuilderReq.append(" AND iRouteSelCode = ");
+                stringBuilderReq.append(txtRsc);
+                stringBuilderReq.append(")");
+                requestMessage = stringBuilderReq.toString();
+            }
+
         }
         else if (prk && !restrict && !cus && !charg) {
             requestMessage = "SELECT *" +
                     "FROM tbl_PRAUserData WHERE iStatus = 0";
         }
 //        requestMessage = "SELECT * FROM tbl_PRAUserData";
+//               ==========>
+        System.out.println(requestMessage);
         connectingToSQL();
         initCustomerPra();
     }

@@ -40,7 +40,7 @@ public class WorkWithUserController extends MainController {
 
     @FXML
     void appBtnRequest(ActionEvent event) {
-//        customers = null;
+        customers.clear();
         if (mnServers.getText().equals("Выбор сервера")) new MyAlert("Вы не выбрали сервер!");
         else {
             if (chkAllSettings.isSelected() && chkAllUsr.isSelected()) {
