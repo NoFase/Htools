@@ -2,21 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44efbddd-621f-4e7c-bd4b-54bec136b817" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerESL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerSip.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controllers/TblCusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controllers/TblCusController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controllers/WorkWithUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controllers/WorkWithUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SQLdialog/HolderBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SQLdialog/HolderBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CallIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CallIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerPra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerPra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/logic/AnalizerForSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/AnalizerForSQL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/tblCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/tblCustomer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/workWithUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/workWithUser.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController$7.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkWithUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dialogWithCommutators/customers/CallIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dialogWithCommutators/customers/CallIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dialogWithCommutators/customers/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dialogWithCommutators/customers/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dialogWithCommutators/customers/CustomerPra.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dialogWithCommutators/customers/CustomerPra.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dialogWithCommutators/processor/FilterLstPra.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dialogWithCommutators/processor/FilterLstPra.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dialogWithCommutators/processor/ShowUSR.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dialogWithCommutators/processor/ShowUSR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/tblCustomer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/tblCustomer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/fxml/workWithUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/workWithUser.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/logic/AnalizerForSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/AnalizerForSQL.class" afterDir="false" />
     </list>
@@ -31,40 +39,78 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/HolderBD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1024">
-              <caret line="68" column="35" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workWithUser.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/logic/AnalizerForSQL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="125" column="29" lean-forward="true" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
+            <state relative-caret-position="-171">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#AnalizerForSQL#0;class#AnalizerForSQL#0" />
+                <element signature="method#AnalizerForSQL#1;class#AnalizerForSQL#0" />
+                <element signature="method#AnalizerForSQL#2;class#AnalizerForSQL#0" />
+                <element signature="method#AnalizerForSQL#4;class#AnalizerForSQL#0" />
+                <element signature="method#AnalizerForSQL#5;class#AnalizerForSQL#0" />
+                <element signature="method#AnalizerForSQL#6;class#AnalizerForSQL#0" />
+                <element signature="method#connectingToSQL#0;class#AnalizerForSQL#0" />
+                <element signature="method#initCustomerPra#0;class#AnalizerForSQL#0" />
+                <element signature="method#initCustomerSip#0;class#AnalizerForSQL#0" />
+                <element signature="method#initCustomerESL#0;class#AnalizerForSQL#0" />
+                <element signature="method#constructingString#0;class#AnalizerForSQL#0" />
+                <element signature="method#constructingString#1;class#AnalizerForSQL#0" />
+                <element signature="method#analasingCheckers#0;class#AnalizerForSQL#0" />
+                <element signature="method#nulling#0;class#AnalizerForSQL#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CallIn.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workWithUser.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="256">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="11" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="16" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workPlaceSample.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" column="284" selection-start-line="11" selection-start-column="284" selection-end-line="11" selection-end-column="284" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/connectingSample.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="14" column="290" selection-start-line="14" selection-start-column="290" selection-end-line="14" selection-end-column="290" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/WorkWithUserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
               <folding>
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#552#553#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,9 +135,12 @@
       <find>callS</find>
       <find>char</find>
       <find>println</find>
+      <find>50</find>
+      <find>menu</find>
     </findStrings>
     <replaceStrings>
       <replace>CSC</replace>
+      <replace>30</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -100,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/MainControllerTMP.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/hello.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/staticVariable/PrimaryStage.java" />
         <option value="$PROJECT_DIR$/src/main/java/network/regt.java" />
@@ -115,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LstTg.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Authority.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CallOUT.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/staticVariable/StaticVariables.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/otherWindows/MyAlert.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/ShowUSR.java" />
@@ -143,13 +190,16 @@
         <option value="$PROJECT_DIR$/src/main/java/Htool.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerPra.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/tblCustomer.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/TblCusController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CallIn.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQLdialog/HolderBD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerPra.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerSip.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Customer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerESL.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/WorkWithUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/tblCustomer.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/logic/AnalizerForSQL.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/TblCusController.java" />
       </list>
     </option>
   </component>
@@ -283,12 +333,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546144863974" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546631923834" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/librarys/jtds-1.3.1.jar!/" />
@@ -364,7 +414,7 @@
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="988" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14378029" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21890146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -373,7 +423,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23617512" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24078341" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36635944" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -394,50 +444,11 @@
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32466567" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CallIn.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LstTg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#143#144#0" expanded="true" />
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LstPra.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LGI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/workWithFiles/WriteToFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -476,16 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLstPra.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLstMsbr.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -513,37 +514,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workPlaceSample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="284" selection-start-line="11" selection-start-column="284" selection-end-line="11" selection-end-column="284" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/listOfServers.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="143" selection-start-line="8" selection-start-column="143" selection-end-line="8" selection-end-column="143" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/connectingSample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="290" selection-start-line="14" selection-start-column="290" selection-end-line="14" selection-end-column="290" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/addingSample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="284" selection-start-line="12" selection-start-column="284" selection-end-line="12" selection-end-column="284" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/ConnectingController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -707,14 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="38" column="108" selection-start-line="38" selection-start-column="96" selection-end-line="38" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Htool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -745,38 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/tblCustomer.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="67" lean-forward="true" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerPra.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="108" column="5" selection-start-line="108" selection-start-column="5" selection-end-line="108" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/TblCusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/WorkWithUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2600">
-          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/HolderBD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1024">
@@ -784,30 +729,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workWithUser.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CallIn.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLstPra.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logic/AnalizerForSQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="125" column="29" lean-forward="true" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
+        <state relative-caret-position="185">
+          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerSip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="38" />
+          <folding>
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerPra.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="114" selection-start-line="5" selection-start-column="106" selection-end-line="5" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CallIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/WorkWithUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/TblCusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="963">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerESL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#804#805#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/tblCustomer.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/AnalizerForSQL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AnalizerForSQL#0;class#AnalizerForSQL#0" />
+            <element signature="method#AnalizerForSQL#1;class#AnalizerForSQL#0" />
+            <element signature="method#AnalizerForSQL#2;class#AnalizerForSQL#0" />
+            <element signature="method#AnalizerForSQL#4;class#AnalizerForSQL#0" />
+            <element signature="method#AnalizerForSQL#5;class#AnalizerForSQL#0" />
+            <element signature="method#AnalizerForSQL#6;class#AnalizerForSQL#0" />
+            <element signature="method#connectingToSQL#0;class#AnalizerForSQL#0" />
+            <element signature="method#initCustomerPra#0;class#AnalizerForSQL#0" />
+            <element signature="method#initCustomerSip#0;class#AnalizerForSQL#0" />
+            <element signature="method#initCustomerESL#0;class#AnalizerForSQL#0" />
+            <element signature="method#constructingString#0;class#AnalizerForSQL#0" />
+            <element signature="method#constructingString#1;class#AnalizerForSQL#0" />
+            <element signature="method#analasingCheckers#0;class#AnalizerForSQL#0" />
+            <element signature="method#nulling#0;class#AnalizerForSQL#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workWithUser.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="16" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workPlaceSample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="284" selection-start-line="11" selection-start-column="284" selection-end-line="11" selection-end-column="284" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/connectingSample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="290" selection-start-line="14" selection-start-column="290" selection-end-line="14" selection-end-column="290" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">

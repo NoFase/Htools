@@ -26,11 +26,11 @@ public class WorkWithUserController extends MainController {
     @FXML
     private SplitMenuButton mnServers;
     @FXML
-    private CheckBox chkPra, chkSip, chkEsl, chkPrk, chkCSC, chkCus, chkCharg, chkTg, chkRsc, chkGw, chkInterface, chkAllUsr, chkAllSettings;
+    private CheckBox chkPra, chkSip, chkEsl, chkPrk, chkCSC, chkCus, chkCharg, chkTg, chkRsc, chkAllUsr, chkAllSettings;
     @FXML
     private Button btnRequestData;
     @FXML
-    private TextField fldCSC, fldCus, fldTg, fldRsc, fldGw, fldInterface;
+    private TextField fldCSC, fldCus, fldTg, fldRsc;
 
     @FXML
     public void appServers(ActionEvent event){
@@ -53,39 +53,45 @@ public class WorkWithUserController extends MainController {
 //      выбор когда зажаты обе галки all
                     new AnalizerForSQL(listOfServers.get(listServers.getAbrServer())[1], chkPra.isSelected(), chkSip.isSelected(), chkEsl.isSelected(),
                             chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(), chkCharg.isSelected(),
-                            chkTg.isSelected(), chkRsc.isSelected(), chkGw.isSelected(), chkInterface.isSelected(),
-                            fldCSC.getText(), fldCus.getText(), fldTg.getText(), fldRsc.getText(), fldGw.getText(), fldInterface.getText());
+                            chkTg.isSelected(), chkRsc.isSelected(),
+                            fldCSC.getText(), fldCus.getText(), fldTg.getText(), fldRsc.getText());
 //      выбор когда зажаты все галки
                 } else if (chkPra.isSelected() && chkSip.isSelected() && chkEsl.isSelected() &&
                         chkPrk.isSelected() && chkCSC.isSelected() && chkCus.isSelected() && chkCharg.isSelected() &&
-                        chkTg.isSelected() && chkRsc.isSelected() && chkGw.isSelected() && chkInterface.isSelected()) {
+                        chkTg.isSelected() && chkRsc.isSelected()) {
                     new AnalizerForSQL(listOfServers.get(listServers.getAbrServer())[1], chkPra.isSelected(), chkSip.isSelected(), chkEsl.isSelected(),
                             chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(), chkCharg.isSelected(),
-                            chkTg.isSelected(), chkRsc.isSelected(), chkGw.isSelected(), chkInterface.isSelected(),
-                            fldCSC.getText(), fldCus.getText(), fldTg.getText(), fldRsc.getText(), fldGw.getText(), fldInterface.getText());
+                            chkTg.isSelected(), chkRsc.isSelected(),
+                            fldCSC.getText(), fldCus.getText(), fldTg.getText(), fldRsc.getText());
+//       выбор когда зажаты только все галки абонентов
+                } else if (chkPra.isSelected() && chkSip.isSelected() && chkEsl.isSelected()) {
+                    new AnalizerForSQL(listOfServers.get(listServers.getAbrServer())[1], chkPra.isSelected(), chkSip.isSelected(), chkEsl.isSelected(),
+                            chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(), chkCharg.isSelected(),
+                            chkTg.isSelected(), chkRsc.isSelected(),
+                            fldCSC.getText(), fldCus.getText(), fldTg.getText(), fldRsc.getText());
 //       выбор когда нажата галка только all в абонентах
                 } else if (chkAllUsr.isSelected()) {
                     new AnalizerForSQL(listOfServers.get(listServers.getAbrServer())[1], chkPra.isSelected(), chkSip.isSelected(), chkEsl.isSelected(),
                             chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(), chkCharg.isSelected(),
-                            chkTg.isSelected(), chkRsc.isSelected(), chkGw.isSelected(), chkInterface.isSelected(),
-                            fldCSC.getText(), fldCus.getText(), fldTg.getText(), fldRsc.getText(), fldGw.getText(), fldInterface.getText());
+                            chkTg.isSelected(), chkRsc.isSelected(),
+                            fldCSC.getText(), fldCus.getText(), fldTg.getText(), fldRsc.getText());
 //       выбор только PRA и SIP абонентов
                 } else if (chkPra.isSelected() && chkSip.isSelected()) {
                     new AnalizerForSQL(listOfServers.get(listServers.getAbrServer())[1], chkPra.isSelected(), chkSip.isSelected(),
                             chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(), chkCharg.isSelected(),
-                            chkTg.isSelected(), chkRsc.isSelected(), chkGw.isSelected(),
-                            fldCSC.getText(), fldCus.getText(), fldTg.getText(), fldRsc.getText(), fldGw.getText());
+                            chkTg.isSelected(), chkRsc.isSelected(),
+                            fldCSC.getText(), fldCus.getText(), fldTg.getText(), fldRsc.getText());
 //      выбор только PRA и ESL абонентов
                 } else if (chkPra.isSelected() && chkEsl.isSelected()) {
                     new AnalizerForSQL(listOfServers.get(listServers.getAbrServer())[1], chkPra.isSelected(), chkEsl.isSelected(),
                             chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(), chkCharg.isSelected(),
-                            chkTg.isSelected(), chkRsc.isSelected(), chkInterface.isSelected(),
-                            fldCSC.getText(), fldCus.getText(), fldTg.getText(), fldRsc.getText(), fldInterface.getText(), 1);
+                            chkTg.isSelected(), chkRsc.isSelected(),
+                            fldCSC.getText(), fldCus.getText(), fldTg.getText(), fldRsc.getText(), 1);
 //      выбор только SIP и ESL абонентов
                 } else if (chkSip.isSelected() && chkEsl.isSelected()) {
                     new AnalizerForSQL(listOfServers.get(listServers.getAbrServer())[1], chkSip.isSelected(), chkEsl.isSelected(),
                             chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(), chkCharg.isSelected(),
-                            chkGw.isSelected(), chkInterface.isSelected(), fldCSC.getText(), fldCus.getText(), fldGw.getText(), fldInterface.getText());
+                            fldCSC.getText(), fldCus.getText());
 //      выбрана только галка на PRA абонентах
                 } else if (chkPra.isSelected()) new AnalizerForSQL(listOfServers.get(listServers.getAbrServer())[1],
                         chkPra.isSelected(), chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(),
@@ -93,12 +99,12 @@ public class WorkWithUserController extends MainController {
                         fldRsc.getText());
 //      выбрана только галка на Sip абонентах
                 else if (chkSip.isSelected()) new AnalizerForSQL(listOfServers.get(listServers.getAbrServer())[1],
-                        chkSip.isSelected(), chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(),
-                        chkCharg.isSelected(), chkGw.isSelected(), fldCSC.getText(), fldCus.getText(), fldGw.getText());
+                        chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(),
+                        chkCharg.isSelected(), fldCSC.getText(), fldCus.getText(), 1);
 //      выбрана только галка на ESL абонентах
                 else if (chkEsl.isSelected()) new AnalizerForSQL(listOfServers.get(listServers.getAbrServer())[1],
-                        chkEsl.isSelected(), chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(),
-                        chkCharg.isSelected(), chkGw.isSelected(), fldCSC.getText(), fldCus.getText(), fldInterface.getText(), 1);
+                        chkPrk.isSelected(), chkCSC.isSelected(), chkCus.isSelected(),
+                        chkCharg.isSelected(), fldCSC.getText(), fldCus.getText(), 0);
             }
         }
         showTables();
@@ -123,8 +129,6 @@ public class WorkWithUserController extends MainController {
 //        Set helps for fields
         fldTg.setTooltip(new Tooltip(new TextForHelps().getFldTgWorkWithUsr()));
         fldRsc.setTooltip(new Tooltip(new TextForHelps().getFldRscWorkWithUsr()));
-        fldGw.setTooltip(new Tooltip(new TextForHelps().getFldGwWorkWithUsr()));
-        fldInterface.setTooltip(new Tooltip(new TextForHelps().getFldInterfaceWorkWithUsr()));
         fldCus.setTooltip(new Tooltip(new TextForHelps().getFldCusWorkWithUsr()));
 
 
@@ -159,30 +163,7 @@ public class WorkWithUserController extends MainController {
                 }
             }
         });
-        chkSip.selectedProperty().addListener(new ChangeListener<Boolean>() {
-            @Override
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if (chkSip.isSelected()) {
-                    chkGw.setDisable(false);
-                    fldGw.setDisable(false);
-                } else {
-                    chkGw.setDisable(true);
-                    fldGw.setDisable(true);
-                }
-            }
-        });
-        chkEsl.selectedProperty().addListener(new ChangeListener<Boolean>() {
-            @Override
-            public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
-                if (chkEsl.isSelected()) {
-                    chkInterface.setDisable(false);
-                    fldInterface.setDisable(false);
-                } else {
-                    chkInterface.setDisable(true);
-                    fldInterface.setDisable(true);
-                }
-            }
-        });
+
         chkAllSettings.selectedProperty().addListener(new ChangeListener<Boolean>() {
             @Override
             public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
@@ -195,8 +176,6 @@ public class WorkWithUserController extends MainController {
                         chkTg.setSelected(true);
                         chkRsc.setSelected(true);
                     }
-                    if (chkSip.isSelected()) chkGw.setSelected(true);
-                    if (chkEsl.isSelected()) chkInterface.setSelected(true);
                 } else {
                     chkPrk.setSelected(false);
                     chkCSC.setSelected(false);
@@ -204,8 +183,6 @@ public class WorkWithUserController extends MainController {
                     chkCharg.setSelected(false);
                     chkTg.setSelected(false);
                     chkRsc.setSelected(false);
-                    chkGw.setSelected(false);
-                    chkInterface.setSelected(false);
                 }
             }
         });

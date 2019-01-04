@@ -56,12 +56,12 @@
       </MenuBar>
       <AnchorPane layoutY="180.0" prefHeight="620.0" prefWidth="1200.0" style="-fx-background-color: #fbfdc4;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="180.0">
          <children>
-            <Pane layoutX="405.0" layoutY="147.0" prefHeight="327.0" prefWidth="390.0" style="-fx-background-color: e3e4cd; -fx-border-color: #b2adad;" AnchorPane.leftAnchor="405.0">
+            <Pane layoutX="405.0" layoutY="147.0" prefHeight="311.0" prefWidth="390.0" style="-fx-background-color: e3e4cd; -fx-border-color: #b2adad;" AnchorPane.leftAnchor="405.0">
                <children>
-                  <SplitMenuButton fx:id="mnServers" layoutX="49.0" layoutY="292.0" mnemonicParsing="false" onAction="#appServers" text="Выбор сервера">
+                  <SplitMenuButton fx:id="mnServers" layoutX="49.0" layoutY="271.0" mnemonicParsing="false" onAction="#appServers" text="Выбор сервера">
 
                   </SplitMenuButton>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e4cd" height="253.0" layoutX="14.0" layoutY="18.0" stroke="#b2adad" strokeType="INSIDE" width="99.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e4cd" height="234.0" layoutX="14.0" layoutY="18.0" stroke="#b2adad" strokeType="INSIDE" width="99.0" />
                   <CheckBox fx:id="chkPra" layoutX="28.0" layoutY="59.0" mnemonicParsing="false" text="PRA" />
                   <CheckBox fx:id="chkSip" layoutX="28.0" layoutY="83.0" mnemonicParsing="false" text="SIP" />
                   <CheckBox fx:id="chkEsl" layoutX="28.0" layoutY="107.0" mnemonicParsing="false" text="ESL" />
@@ -70,7 +70,7 @@
                         <Font name="System Bold" size="11.0" />
                      </font>
                   </Label>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e4cd" height="253.0" layoutX="122.0" layoutY="18.0" stroke="#b2adad" strokeType="INSIDE" width="248.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e3e4cd" height="234.0" layoutX="122.0" layoutY="18.0" stroke="#b2adad" strokeType="INSIDE" width="248.0" />
                   <Label layoutX="210.0" layoutY="31.0" text="параметры" textAlignment="CENTER">
                      <font>
                         <Font name="System Bold" size="11.0" />
@@ -84,16 +84,12 @@
                   <CheckBox fx:id="chkTg" disable="true" layoutX="142.0" layoutY="178.0" mnemonicParsing="false" text="Tg" />
                   <CheckBox fx:id="chkRsc" disable="true" layoutX="142.0" layoutY="201.0" mnemonicParsing="false" text="RSC" />
                   <Line endX="72.0" layoutX="289.0" layoutY="52.0" startX="-159.0" />
-                  <CheckBox fx:id="chkGw" disable="true" layoutX="142.0" layoutY="223.0" mnemonicParsing="false" text="шлюз" />
-                  <CheckBox fx:id="chkInterface" disable="true" layoutX="142.0" layoutY="245.0" mnemonicParsing="false" text="интерфейс" />
-                  <Button fx:id="btnRequestData" layoutX="192.0" layoutY="292.0" mnemonicParsing="false" onAction="#appBtnRequest" text="запросить данные" />
+                  <Button fx:id="btnRequestData" layoutX="192.0" layoutY="271.0" mnemonicParsing="false" onAction="#appBtnRequest" text="запросить данные" />
                   <TextField fx:id="fldCus" accessibleHelp="номер категории" layoutX="248.0" layoutY="106.0" prefHeight="22.0" prefWidth="63.0" />
                   <TextField fx:id="fldTg" accessibleHelp="номер транка" disable="true" layoutX="247.0" layoutY="173.0" prefHeight="22.0" prefWidth="63.0" />
                   <TextField fx:id="fldRsc" accessibleHelp="номер маршрута" disable="true" layoutX="247.0" layoutY="196.0" prefHeight="22.0" prefWidth="63.0" />
-                  <TextField fx:id="fldGw" accessibleHelp="название шлюза" disable="true" layoutX="247.0" layoutY="219.0" prefHeight="22.0" prefWidth="63.0" />
-                  <TextField fx:id="fldInterface" accessibleHelp="номер интерфейса" disable="true" layoutX="247.0" layoutY="242.0" prefHeight="22.0" prefWidth="63.0" />
-                  <CheckBox fx:id="chkAllUsr" layoutX="70.0" layoutY="245.0" mnemonicParsing="false" text="all" />
-                  <CheckBox fx:id="chkAllSettings" layoutX="327.0" layoutY="245.0" mnemonicParsing="false" text="all" />
+                  <CheckBox fx:id="chkAllUsr" layoutX="70.0" layoutY="220.0" mnemonicParsing="false" text="all" />
+                  <CheckBox fx:id="chkAllSettings" layoutX="327.0" layoutY="220.0" mnemonicParsing="false" text="all" />
                   <TextField fx:id="fldCSC" accessibleHelp="номер категории" layoutX="248.0" layoutY="82.0" prefHeight="22.0" prefWidth="63.0" />
                </children>
             </Pane>

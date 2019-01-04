@@ -6,12 +6,13 @@
 <TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="GUI.controllers.TblCusController">
   <columns>
     <TableColumn fx:id="TYPE" prefWidth="75.0" text="Subscriber type" />
-    <TableColumn fx:id="number" prefWidth="75.0" text="Number" />
-    <TableColumn fx:id="lp" prefWidth="75.0" text="LP" />
-      <TableColumn fx:id="tg" prefWidth="75.0" text="TG" />
-      <TableColumn fx:id="rsc" prefWidth="75.0" text="RSC" />
-      <TableColumn fx:id="csc" prefWidth="75.0" text="CSC" />
-      <TableColumn fx:id="status" prefWidth="75.0" text="Status" />
+    <TableColumn fx:id="number" prefWidth="60.0" text="Number" />
+    <TableColumn fx:id="lp" prefWidth="30.0" text="LP" />
+      <TableColumn fx:id="tg" prefWidth="40.0" text="TG" />
+      <TableColumn fx:id="rsc" prefWidth="40.0" text="RSC" />
+      <TableColumn fx:id="csc" prefWidth="30.0" text="CSC" />
+      <TableColumn fx:id="status" prefWidth="50.0" text="Status" />
+    <TableColumn fx:id="category" prefWidth="30.0" text="CUS" />
       <TableColumn fx:id="intraOfficeI" prefWidth="75.0" text="intraOfficeI" />
       <TableColumn fx:id="localI" prefWidth="75.0" text="localI" />
       <TableColumn fx:id="localTollI" prefWidth="75.0" text="localTollI" />

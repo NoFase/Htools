@@ -116,15 +116,9 @@ public class TblCusController {
     private ObservableList<Customer> getCustomerInnerList() {
         ArrayList<Customer> list = new ArrayList<>();
 
-//        if (StaticVariables.customers.size() == 0) new ListOfServers().reading();
-        System.out.println("-------------------------------------------------------------");
+//        System.out.println("-------------------------------------------------------------");
         for (Map.Entry<String, Customer> entry: StaticVariables.customers.entrySet()){
             list.add(entry.getValue());
-
-//            System.out.println(entry.getValue().getNumber() + " " + entry.getValue().getLp()
-//                + " " + entry.getValue().getTg() + " " + entry.getValue().getCsc() + " "
-//                + entry.getValue().getRsc() + " " + entry.getValue().getCategory() + " "
-//                + entry.getValue().getStatus());
         }
         ObservableList<Customer> out = FXCollections.observableArrayList(list);
         return out;
