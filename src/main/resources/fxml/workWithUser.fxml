@@ -77,7 +77,7 @@
                      </font>
                   </Label>
                   <CheckBox fx:id="chkPrk" layoutX="142.0" layoutY="61.0" mnemonicParsing="false" text="блокировка" />
-                  <CheckBox fx:id="chkRestrict" layoutX="142.0" layoutY="85.0" mnemonicParsing="false" text="ограничения" />
+                  <CheckBox fx:id="chkCSC" layoutX="142.0" layoutY="85.0" mnemonicParsing="false" text="CSC" />
                   <CheckBox fx:id="chkCus" layoutX="142.0" layoutY="109.0" mnemonicParsing="false" text="категоря" />
                   <CheckBox fx:id="chkCharg" layoutX="142.0" layoutY="134.0" mnemonicParsing="false" text="charging" />
                   <Label layoutX="198.0" layoutY="158.0" text="привязки" />
@@ -94,6 +94,7 @@
                   <TextField fx:id="fldInterface" accessibleHelp="номер интерфейса" disable="true" layoutX="247.0" layoutY="242.0" prefHeight="22.0" prefWidth="63.0" />
                   <CheckBox fx:id="chkAllUsr" layoutX="70.0" layoutY="245.0" mnemonicParsing="false" text="all" />
                   <CheckBox fx:id="chkAllSettings" layoutX="327.0" layoutY="245.0" mnemonicParsing="false" text="all" />
+                  <TextField fx:id="fldCSC" accessibleHelp="номер категории" layoutX="248.0" layoutY="82.0" prefHeight="22.0" prefWidth="63.0" />
                </children>
             </Pane>
          </children></AnchorPane>

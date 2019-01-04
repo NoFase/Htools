@@ -14,26 +14,26 @@ public class CallIn implements Authority {
 
     @Override
     public Boolean getIntraOffice() {
-        return null;
+        return intraOffice;
     }
 
     @Override
     public Boolean getLocal() {
-        return null;
+        return local;
     }
 
     @Override
     public Boolean getLocalToll() {
-        return null;
+        return localToll;
     }
 
     @Override
     public Boolean getNational() {
-        return null;
+        return national;
     }
 
     @Override
     public Boolean getInternational() {
-        return null;
+        return international;
     }
 }

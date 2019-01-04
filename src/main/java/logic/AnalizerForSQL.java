@@ -15,7 +15,6 @@ import static staticVariable.StaticVariables.customers;
 
 public class AnalizerForSQL {
 
-    private final String PATTERNAUTH = "((01111)|(10111)|(11011)|(11101)|(11110))([0-1]{27})";
     private String requestMessage;
     private Holder holder;
     private ResultSet rs;
@@ -26,86 +25,166 @@ public class AnalizerForSQL {
     private Pattern pattern;
 
 
-    public AnalizerForSQL(String ipServer, boolean pra, boolean sip, boolean esl, boolean prk, boolean restrict, boolean cus, boolean charg, boolean tg, boolean rsc, boolean gw, boolean interfaces, String txtCus, String txtTg, String txtRsc, String txtGw, String txtInterface) {
+    public AnalizerForSQL(String ipServer, boolean pra, boolean sip, boolean esl, boolean prk, boolean CSC, boolean cus, boolean charg, boolean tg, boolean rsc, boolean gw, boolean interfaces, String txtCSC, String txtCus, String txtTg, String txtRsc, String txtGw, String txtInterface) {
         new MyAlert("такой выбор еще не запрогроммирован!");
     }
 
-    public AnalizerForSQL(String ipServer, boolean pra, boolean prk, boolean restrict, boolean cus, boolean charg, boolean tg, boolean rsc, String txtCus, String txtTg, String txtRsc) {
+    public AnalizerForSQL(String ipServer, boolean pra, boolean prk, boolean CSC, boolean cus, boolean charg, boolean tg, boolean rsc, String txtCSC, String txtCus, String txtTg, String txtRsc) {
         this.ipServer = ipServer;
         stringBuilderReq.append(tblPra);
 //        ============>
 //        System.out.println(stringBuilderReq.toString());
-        if (prk && restrict && cus && charg){
+//        1     v   v   v   v
+        if (prk && CSC && cus && charg){
             stringBuilderReq.append(" WHERE (iStatus = 0)");
-            if (txtCus.equals("") || txtCus == null) requestMessage = stringBuilderReq.toString();
+            if (!txtCSC.equals("") || txtCSC != null) constructingString("iCallSrcCode", txtCSC);
+            if (!txtCus.equals("") || txtCus != null) constructingString("iCmdCat", txtCus);
 //            нужна проверка txtCus на то что удовлетворяет требованиям категории
-            else {
-                constructingString("iCmdCat", txtCus);
-            }
-            if (tg && !txtTg.equals("")){
-                constructingString("iPRATg", txtTg);
-            }
-            else if (rsc && !txtRsc.equals("")){
-                constructingString("iRouteSelCode", txtRsc);
-            }
-
+            stringBuilderReq.delete(stringBuilderReq.length()-1 , stringBuilderReq.length());
+            stringBuilderReq.append(" AND ");
+            constructingString("iChargeType");
+            if (tg && !txtTg.equals("")) constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
         }
-        else if (prk && !restrict && !cus && !charg) {
+//        2     v   v   v   o
+        else if (prk && CSC && cus && !charg){
             stringBuilderReq.append(" WHERE (iStatus = 0)");
-            requestMessage = stringBuilderReq.toString();
-            if (tg && !txtTg.equals("")){
-                constructingString("iPRATg", txtTg);
-            }
-            else if (rsc && !txtRsc.equals("")){
-                constructingString("iRouteSelCode", txtRsc);
-            }
+            if (!txtCSC.equals("") || txtCSC != null) constructingString("iCallSrcCode", txtCSC);
+            if (!txtCus.equals("") || txtCus != null) constructingString("iCmdCat", txtCus);
+            if (tg && !txtTg.equals("")) constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
         }
-        else if (!prk && restrict && !cus && !charg){
-//            pattern = Pattern.compile(PATTERNAUTH);
-//            stringBuilderReq.append(" WHERE (sCallOutRight = dbo.regexp_match(");
-//            stringBuilderReq.append(PATTERNAUTH);
-//            stringBuilderReq.append("))");
-//            requestMessage = stringBuilderReq.toString();
+//        3     v   v   o   v
+        else if (prk && CSC && !cus && charg){
+            stringBuilderReq.append(" WHERE (iStatus = 0)");
+            if (!txtCSC.equals("") || txtCSC != null) constructingString("iCallSrcCode", txtCSC);
+            constructingString("iChargeType");
+            if (tg && !txtTg.equals("")) constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
         }
+//        4     v   o   v   v
+        else if (prk && !CSC && cus && charg){
+            stringBuilderReq.append(" WHERE (iStatus = 0)");
+            constructingString("iChargeType");
+            if (!txtCus.equals("") || txtCus != null) constructingString("iCmdCat", txtCus);
+            if (tg && !txtTg.equals("")) constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
+        }
+//        5     o   v   v   v
+        else if (!prk && CSC && cus && charg){
+            stringBuilderReq.append("WHERE (iChargeType = 0)");
+            if (!txtCSC.equals("") || txtCSC != null) constructingString("iCallSrcCode", txtCSC);
+            if (!txtCus.equals("") || txtCus != null) constructingString("iCmdCat", txtCus);
+            if (tg && !txtTg.equals("")) constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
+        }
+//        6     o   o   v   v
+        else if (!prk && !CSC && cus && charg){
+            stringBuilderReq.append("WHERE (iChargeType = 0)");
+            if (!txtCus.equals("") || txtCus != null) constructingString("iCmdCat", txtCus);
+            if (tg && !txtTg.equals("")) constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
+        }
+//        7     o   v   v   o
+        else if (!prk && CSC && cus && !charg){
+            if (!txtCSC.equals("") || txtCSC != null) {
+                stringBuilderReq.append("WHERE iCallSrcCode = ");
+                stringBuilderReq.append(txtCSC);
+                stringBuilderReq.append(")");
+            }
+            if (!txtCus.equals("") || txtCus != null) constructingString("iCmdCat", txtCus);
+            if (tg && !txtTg.equals("")) constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
+        }
+//        8     v   v   o   o
+        else if (prk && CSC && !cus && !charg){
+            stringBuilderReq.append(" WHERE (iStatus = 0)");
+            if (!txtCSC.equals("") || txtCSC != null) constructingString("iCallSrcCode", txtCSC);
+            if (tg && !txtTg.equals("")) constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
+        }
+//        9     v   o   o   v
+        else if (prk && !CSC && !cus && charg) {
+            stringBuilderReq.append(" WHERE (iStatus = 0 AND ");
+            constructingString("iChargeType");
+            if (tg && !txtTg.equals("")) constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
+        }
+//        10     v   o   o   o
+        else if (prk && !CSC && !cus && !charg) {
+            stringBuilderReq.append(" WHERE (iStatus = 0)");
+            if (tg && !txtTg.equals(""))constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
+        }
+//        11     o   v   o   o
+        else if (!prk && CSC && !cus && !charg) {
+            stringBuilderReq.append(" Where (");
+            if (!txtCSC.equals("") || txtCSC != null) constructingString("iCallSrcCode", txtCSC);
+            if (tg && !txtTg.equals(""))constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
+        }
+//        12    o   o   v   o
+        else if (!prk && !CSC && cus && !charg) {
+            stringBuilderReq.append(" Where (");
+
+            if (!txtCus.equals("") || txtCus != null) constructingString("iCmdCat", txtCus);
+            if (tg && !txtTg.equals(""))constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
+        }
+//        13    o   o   o   v
+        else if (!prk && !CSC && !cus && charg) {
+            stringBuilderReq.append(" Where (");
+            constructingString("iChargeType");
+            if (tg && !txtTg.equals(""))constructingString("iPRATg", txtTg);
+            else if (rsc && !txtRsc.equals("")) constructingString("iRouteSelCode", txtRsc);
+//            else requestMessage = stringBuilderReq.toString();
+        }
+        requestMessage = stringBuilderReq.toString();
 //               ==========>
-        System.out.println(requestMessage);
+        System.out.println("======> " + requestMessage);
         connectingToSQL();
         initCustomerPra();
+
+//        for (Map.Entry<String, Customer> xxx: customers.entrySet()) {
+//            System.out.println(xxx.getValue().getCallIn().getInternational().toString() + "\t" +
+//                    xxx.getValue().getCallIn().getIntraOffice().toString() + "\t" +
+//                    xxx.getValue().getCallIn().getLocal().toString() + "\t" +
+//                    xxx.getValue().getCallIn().getLocalToll().toString() + "\t" +
+//                    xxx.getValue().getCallIn().getNational().toString());
+//        }
     }
 
-    public AnalizerForSQL(String ipServer, boolean sip, boolean prk, boolean restrict, boolean cus, boolean charg, boolean gw, String txtCus, String txtGw) {
+    public AnalizerForSQL(String ipServer, boolean sip, boolean prk, boolean CSC, boolean cus, boolean charg, boolean gw, String txtCSC, String txtCus, String txtGw) {
         this.ipServer = ipServer;
         stringBuilderReq.append(tblSip);
 
         new MyAlert("такой выбор еще не запрогроммирован!");
     }
 
-    public AnalizerForSQL(String ipServer, boolean esl, boolean prk, boolean restrict, boolean cus, boolean charg, boolean gw, String txtCus, String txtInterface, int i) {
+    public AnalizerForSQL(String ipServer, boolean esl, boolean prk, boolean CSC, boolean cus, boolean charg, boolean gw, String txtCSC, String txtCus, String txtInterface, int i) {
         new MyAlert("такой выбор еще не запрогроммирован!");
     }
 
-    public AnalizerForSQL(String ipServer, boolean pra, boolean sip, boolean prk, boolean restrict, boolean cus, boolean charg, boolean tg, boolean rsc, boolean gw, String txtCus, String txtTg, String txtRsc, String txtGw) {
+    public AnalizerForSQL(String ipServer, boolean pra, boolean sip, boolean prk, boolean CSC, boolean cus, boolean charg, boolean tg, boolean rsc, boolean gw, String txtCSC, String txtCus, String txtTg, String txtRsc, String txtGw) {
         new MyAlert("такой выбор еще не запрогроммирован!");
     }
 
-    public AnalizerForSQL(String ipServer, boolean pra, boolean esl, boolean prk, boolean restrict, boolean cus, boolean charg, boolean tg, boolean rsc, boolean interfaces, String txtCus, String txtTg, String txtRsc, String txtInterface, int i) {
+    public AnalizerForSQL(String ipServer, boolean pra, boolean esl, boolean prk, boolean CSC, boolean cus, boolean charg, boolean tg, boolean rsc, boolean interfaces, String txtCSC, String txtCus, String txtTg, String txtRsc, String txtInterface, int i) {
         new MyAlert("такой выбор еще не запрогроммирован!");
     }
 
-    public AnalizerForSQL(String ipServer, boolean sip, boolean esl, boolean prk, boolean restrict, boolean cus, boolean charg,  boolean gw, boolean interfaces,String txtCus, String txtGw, String txtInterface) {
+    public AnalizerForSQL(String ipServer, boolean sip, boolean esl, boolean prk, boolean CSC, boolean cus, boolean charg,  boolean gw, boolean interfaces, String txtCSC, String txtCus, String txtGw, String txtInterface) {
         new MyAlert("такой выбор еще не запрогроммирован!");
     }
-//[1]{5}[0-1]{27}
     private void connectingToSQL(){
         holder = new HolderMS2000();
         holder.connecting(ipServer, "searcher", "SoftX3000");
         rs = new Request().sendingRequest(holder.getStatement(), requestMessage);
-
     }
     private void initCustomerPra(){
         try {
             while (rs.next()){
-                System.out.println(rs.getString("sCallInRight"));
+//                System.out.println(rs.getString("sCallInRight"));
                 Boolean[] callIn = new ParseAuthority().transcoding(rs.getString("sCallInRight"));
                 Boolean[] callOut = new ParseAuthority().transcoding(rs.getString("sCallOutRight"));
                 Authority callInA = new CallIn(callIn[0], callIn[1], callIn[2], callIn[3], callIn[4]);
@@ -128,13 +207,41 @@ public class AnalizerForSQL {
     }
 
     private void constructingString (String parameter, String txt) {
-        stringBuilderReq.delete(stringBuilderReq.length()-1 , stringBuilderReq.length());
-        stringBuilderReq.append(" AND ");
+        if (stringBuilderReq.substring(stringBuilderReq.length()-1).equals(")")) {
+            stringBuilderReq.delete(stringBuilderReq.length()-1 , stringBuilderReq.length());
+            stringBuilderReq.append(" AND ");
+        }
+        else if (stringBuilderReq.toString().contains("(") && !stringBuilderReq.toString().contains("AND") && stringBuilderReq.toString().contains("=")) stringBuilderReq.append(" AND ");
+        stringBuilderReq.append(" ");
         stringBuilderReq.append(parameter);
         stringBuilderReq.append(" = ");
         stringBuilderReq.append(txt);
-        stringBuilderReq.append(")");
+        if (stringBuilderReq.toString().contains("AND")) stringBuilderReq.append(")");
         requestMessage = stringBuilderReq.toString();
     }
 
+    private void constructingString (String parameter){
+        if (stringBuilderReq.substring(stringBuilderReq.length()-1).equals(")")) {
+            stringBuilderReq.delete(stringBuilderReq.length()-1 , stringBuilderReq.length());
+        }
+        if (stringBuilderReq.toString().contains("(") && !stringBuilderReq.toString().contains("AND") && stringBuilderReq.toString().contains("=")) stringBuilderReq.append(" AND ");
+        stringBuilderReq.append(parameter);
+        stringBuilderReq.append(" = 0)");
+//        if (stringBuilderReq.toString().contains("AND")) stringBuilderReq.append(")");
+        requestMessage = stringBuilderReq.toString();
+    }
 }
+
+//        1     v   v   v   v
+//        2     v   v   v   o
+//        3     v   v   o   v
+//        4     v   o   v   v
+//        5     o   v   v   v
+//        6     o   o   v   v
+//        7     o   v   v   o
+//        8     v   v   o   o
+//        9     v   o   o   v
+//        10    v   o   o   o
+//        11    o   v   o   o
+//        12    o   o   v   o
+//        13    o   o   o   v

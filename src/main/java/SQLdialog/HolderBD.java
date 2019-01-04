@@ -53,7 +53,7 @@ public class HolderBD {
             21		-	iCxSubGrp
             22		-	sEnhancedVoiceAttribute
             23		-	sServiceCtrlFlag
-            24		-	iCallSrcCode
+            24		-	iCallSrcCode    *
             25		-	iPbxGrpNo
             26		-	iOperatorGrpNo
             27		-	iCodecPrefer
@@ -66,7 +66,7 @@ public class HolderBD {
             34		-	iReserved
             35		-	iPulseType
             36		-	iChargeErr
-            37		-	iChargeType
+            37		-	iChargeType *
             38		-	iReserved2
             39		-	iRingMode
             40		-	iUSBFlag
