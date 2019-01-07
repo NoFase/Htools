@@ -1,3 +1,5 @@
+import SQLdialog.Holder;
+import SQLdialog.HolderH2;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,7 +10,11 @@ import static staticVariable.PrimaryStage.primaryStage;
 
 public class Htool extends Application {
     public static void main(String[] args) {
-        launch(args);
+//        launch(args);
+
+        HolderH2 hh = new HolderH2();
+
+
     }
 
     @Override

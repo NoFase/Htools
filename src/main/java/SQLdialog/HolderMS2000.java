@@ -5,7 +5,10 @@ import java.sql.SQLException;
 
 public class HolderMS2000 extends Holder {
 
+
     public HolderMS2000() {
+        super.conPartOne = "jdbc:jtds:sqlserver://";
+        super.conPartTwo = ":1433;databaseName=Bam";
         try {
             DriverManager.registerDriver(new net.sourceforge.jtds.jdbc.Driver());
         } catch (SQLException e) {
