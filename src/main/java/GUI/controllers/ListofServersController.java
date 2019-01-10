@@ -2,22 +2,25 @@ package GUI.controllers;
 
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.AnchorPane;
 import staticVariable.StaticVariables;
 import workWithFiles.ListOfServers;
 
 public class ListofServersController {
 
-    private String abbbbr = "abr";
+
+    @FXML
+    private AnchorPane panelListOfServers;
 
     @FXML
     private ResourceBundle resources;
@@ -27,6 +30,14 @@ public class ListofServersController {
 
     @FXML
     private TableView table;
+
+    @FXML
+    void appClear(ActionEvent event) {
+        ListOfServers servers = new ListOfServers();
+        servers.clearing("tbl_Servers");
+        StaticVariables.listOfServers.clear();
+        panelListOfServers.getScene().getWindow().hide();
+    }
 
     @FXML
     private TableColumn<ServerInner, String> tblAbr = new TableColumn<>("ABR");

@@ -1,5 +1,6 @@
 package GUI.controllers;
 
+import GUI.otherWindows.MyAlert;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
@@ -7,6 +8,8 @@ import workWithFiles.ListOfServers;
 import staticVariable.StaticVariables;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class AddingController extends MainController{
 
@@ -21,14 +24,21 @@ public class AddingController extends MainController{
 
     @FXML
     void appAdding(ActionEvent event) throws IOException {
-        if (!StaticVariables.listOfServers.containsKey(fldABR.getText())) {
-            StaticVariables.listOfServers.put(fldABR.getText(), new String[]{fldNameServer.getText(), fldIp.getText()});
-            new ListOfServers().writing(fldABR.getText());
 
-            reOpenNewWindow("fxml/mainSample.fxml");
-        } else {
-            System.out.println("такой сервер уже добавлен");
+        if (StaticVariables.listOfServers.size() > 0){
+            for (HashMap.Entry<String, String[]> server : StaticVariables.listOfServers.entrySet()){
+                if (server.getKey().contains(fldABR.getText()) || server.getValue()[1].contains(fldIp.getText()) ||
+                server.getValue()[0].equals(fldNameServer.getText())) {
+                    new MyAlert("такой сервер уже добавлен");
+                    return;
+                }
+            }
         }
+        ListOfServers servers = new ListOfServers();
+        servers.reading();
+        StaticVariables.listOfServers.put(fldABR.getText(), new String[]{fldNameServer.getText(), fldIp.getText()});
+        servers.writing(fldABR.getText());
+//            reOpenNewWindow("fxml/mainSample.fxml");
     }
 
     @FXML

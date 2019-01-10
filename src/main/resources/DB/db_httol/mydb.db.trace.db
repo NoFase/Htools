@@ -145,3 +145,240 @@ ID = 1 ABRSERVER = SRT NAMESERVER = Saratov IPSERVER = 10.140.27.8 [*]""}" [4200
 org.h2.jdbc.JdbcSQLException: Синтаксическая ошибка в выражении SQL "INSERT ID[*], ABRSERVER, NAMESERVER IPSERVER TO SERVERS WHERE (ID = 1 ABRSERVER = SRT NAMESERVER = SARATOV IPSERVER = 10.140.27.8) "; ожидалось "INTO"
 Syntax error in SQL statement "INSERT ID[*], ABRSERVER, NAMESERVER IPSERVER TO SERVERS WHERE (ID = 1 ABRSERVER = SRT NAMESERVER = SARATOV IPSERVER = 10.140.27.8) "; expected "INTO"; SQL statement:
 INSERT id, abrserver, nameserver ipserver TO servers WHERE (ID = 1 ABRSERVER = SRT NAMESERVER = Saratov IPSERVER = 10.140.27.8) [42001-197]
+2019-01-09 10:44:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: "("; SQL statement:
+create table IF NOT EXISTS tbl_Servers (ID INT, ABR VARCHAR(10), NAME (VARCHAR 50), IP VARCHAR(20)) [50004-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:4400)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:4215)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:6662)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6570)
+	at org.h2.command.Parser.parseCreate(Parser.java:4615)
+	at org.h2.command.Parser.parsePrepared(Parser.java:380)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at SQLdialog.HolderH2.<init>(HolderH2.java:21)
+	at Htool.main(Htool.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:389)
+	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:767)
+2019-01-09 10:45:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TBL_SERVERS ID[*] INT, ABR VARCHAR(10), NAME (VARCHAR 50), IP VARCHAR(20) "; SQL statement:
+create table IF NOT EXISTS tbl_Servers ID INT, ABR VARCHAR(10), NAME (VARCHAR 50), IP VARCHAR(20) [42000-197]
+2019-01-09 10:47:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE TBL_SERVERS ID[*] INT, ABR VARCHAR(10), NAME (VARCHAR 50), IP VARCHAR(20) "; SQL statement:
+create table tbl_Servers ID INT, ABR VARCHAR(10), NAME (VARCHAR 50), IP VARCHAR(20) [42000-197]
+2019-01-09 10:48:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: "("; SQL statement:
+create table IF NOT EXISTS tbl_Servers (ID INT, ABR VARCHAR(10), NAME (VARCHAR 50), IP VARCHAR(20)); [50004-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:4400)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:4215)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:6662)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6570)
+	at org.h2.command.Parser.parseCreate(Parser.java:4615)
+	at org.h2.command.Parser.parsePrepared(Parser.java:380)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at SQLdialog.HolderH2.<init>(HolderH2.java:21)
+	at Htool.main(Htool.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:389)
+	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:767)
+2019-01-09 10:48:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: "("; SQL statement:
+create table IF NOT EXISTS tbl_Servers (ID INT, ABR VARCHAR(10), NAME (VARCHAR 50), IP VARCHAR(20)); [50004-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:4400)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:4215)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:6662)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:6570)
+	at org.h2.command.Parser.parseCreate(Parser.java:4615)
+	at org.h2.command.Parser.parsePrepared(Parser.java:380)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at SQLdialog.HolderH2.<init>(HolderH2.java:21)
+	at Htool.main(Htool.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:389)
+	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:767)
+2019-01-09 10:49:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TBL_SERVERS ID[*] INT, ABR VARCHAR(10), NAME (VARCHAR 50), IP VARCHAR(20); "; SQL statement:
+create table IF NOT EXISTS tbl_Servers ID INT, ABR VARCHAR(10), NAME (VARCHAR 50), IP VARCHAR(20); [42000-197]
+2019-01-09 10:53:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TBL_SERVERS ('ID'[*] INT,'ABR' VARCHAR(10),'NAME' (VARCHAR 50),'IP' VARCHAR(20)); "; expected "identifier"; SQL statement:
+create table IF NOT EXISTS tbl_Servers ('ID' INT,'ABR' VARCHAR(10),'NAME' (VARCHAR 50),'IP' VARCHAR(20)); [42001-197]
+2019-01-09 10:54:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TBL_SERVERS ('ID'[*] INT,'ABR' VARCHAR(10),'NAME' (VARCHAR 50),'IP' VARCHAR(20)) "; expected "identifier"; SQL statement:
+create table IF NOT EXISTS tbl_Servers ('ID' INT,'ABR' VARCHAR(10),'NAME' (VARCHAR 50),'IP' VARCHAR(20)) [42001-197]
+2019-01-09 10:55:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS TBL_SERVERS ('ID'[*] INT,'ABR' VARCHAR(10),'NAME' (VARCHAR 50),'IP' VARCHAR(20)); "; expected "identifier"; SQL statement:
+create table IF NOT EXISTS tbl_Servers ('ID' INT,'ABR' VARCHAR(10),'NAME' (VARCHAR 50),'IP' VARCHAR(20)); [42001-197]
+2019-01-09 10:58:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "create table IF NOT EXISTS tbl_Servers ('ID' BIGINT           NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR' VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' (VARCHAR 50)   NULL        COMMENT 'name of server,'IP' VARCHAR(20)      NULL        COMMENT 'ip address of server[*]');"; SQL statement:
+create table IF NOT EXISTS tbl_Servers ('ID' BIGINT           NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR' VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' (VARCHAR 50)   NULL        COMMENT 'name of server,'IP' VARCHAR(20)      NULL        COMMENT 'ip address of server'); [42000-197]
+2019-01-09 10:59:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "create table IF NOT EXISTS tbl_Servers ('ID'   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR'  VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' VARCHAR(50)     NULL        COMMENT 'name of server,'IP'   VARCHAR(20)     NULL        COMMENT 'ip address of server[*]');"; SQL statement:
+create table IF NOT EXISTS tbl_Servers ('ID'   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR'  VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' VARCHAR(50)     NULL        COMMENT 'name of server,'IP'   VARCHAR(20)     NULL        COMMENT 'ip address of server'); [42000-197]
+2019-01-09 11:00:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "create table IF NOT EXISTS tbl_Servers ('ID'   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR'  VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' VARCHAR(50)     NULL        COMMENT 'name of server,'IP'   VARCHAR(50)     NULL        COMMENT 'ip address of server[*]');"; SQL statement:
+create table IF NOT EXISTS tbl_Servers ('ID'   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR'  VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' VARCHAR(50)     NULL        COMMENT 'name of server,'IP'   VARCHAR(50)     NULL        COMMENT 'ip address of server'); [42000-197]
+2019-01-09 11:01:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "create table IF NOT EXISTS tbl_Servers ('ID'   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR'  VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' VARCHAR(50)     NULL        COMMENT 'name of server,'IP'   VARCHAR(50)     NULL        COMMENT 'ip address of server[*]')"; SQL statement:
+create table IF NOT EXISTS tbl_Servers ('ID'   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR'  VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' VARCHAR(50)     NULL        COMMENT 'name of server,'IP'   VARCHAR(50)     NULL        COMMENT 'ip address of server') [42000-197]
+2019-01-09 11:05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "create table IF NOT EXISTS tbl_Servers ('ID'   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR'  VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' VARCHAR(50)     NULL        COMMENT 'name of server,'IP'   VARCHAR(50)     NULL        COMMENT 'ip address of server[*]')"; SQL statement:
+create table IF NOT EXISTS tbl_Servers ('ID'   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR'  VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' VARCHAR(50)     NULL        COMMENT 'name of server,'IP'   VARCHAR(50)     NULL        COMMENT 'ip address of server') [42000-197]
+2019-01-09 11:05:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "create table IF NOT EXISTS tbl_Servers ('ID'   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR'  VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' VARCHAR(50)     NULL        COMMENT 'name of server,'IP'   VARCHAR(50)     NULL        COMMENT 'ip address of server[*]');"; SQL statement:
+create table IF NOT EXISTS tbl_Servers ('ID'   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id','ABR'  VARCHAR(10)     NULL        COMMENT 'abbreviation','NAME' VARCHAR(50)     NULL        COMMENT 'name of server,'IP'   VARCHAR(50)     NULL        COMMENT 'ip address of server'); [42000-197]
+2019-01-09 11:06:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ABR" not found; SQL statement:
+insert into servers (id, abr, name, ip) values (1, 'SRT', 'Saratov', '10.140.27.8'); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.command.Parser.parseColumn(Parser.java:936)
+	at org.h2.command.Parser.parseColumnList(Parser.java:920)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1258)
+	at org.h2.command.Parser.parseInsert(Parser.java:1222)
+	at org.h2.command.Parser.parsePrepared(Parser.java:431)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at SQLdialog.HolderH2.<init>(HolderH2.java:29)
+	at Htool.main(Htool.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:389)
+	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:767)
+2019-01-09 11:08:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "create table IF NOT EXISTS tbl_Servers (ID   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id',ABR  VARCHAR(50)     NULL        COMMENT 'abbreviation',NAME VARCHAR(50)     NULL        COMMENT 'name of server,IP   VARCHAR(50)     NULL        COMMENT 'ip address of server[*]');"; SQL statement:
+create table IF NOT EXISTS tbl_Servers (ID   BIGINT          NOT NULL    AUTO_INCREMENT COMMENT 'id',ABR  VARCHAR(50)     NULL        COMMENT 'abbreviation',NAME VARCHAR(50)     NULL        COMMENT 'name of server,IP   VARCHAR(50)     NULL        COMMENT 'ip address of server'); [42000-197]
+2019-01-09 11:09:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ABR" not found; SQL statement:
+insert into servers (id, abr, name, ip) values (1, 'SRT', 'Saratov', '10.140.27.8'); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.command.Parser.parseColumn(Parser.java:936)
+	at org.h2.command.Parser.parseColumnList(Parser.java:920)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1258)
+	at org.h2.command.Parser.parseInsert(Parser.java:1222)
+	at org.h2.command.Parser.parsePrepared(Parser.java:431)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at SQLdialog.HolderH2.<init>(HolderH2.java:29)
+	at Htool.main(Htool.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:389)
+	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:767)
+2019-01-09 11:10:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "ABR" not found; SQL statement:
+insert into servers (id, ABR, NAME, IP) values (1, 'SRT', 'Saratov', '10.140.27.8'); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.table.Table.getColumn(Table.java:682)
+	at org.h2.command.Parser.parseColumn(Parser.java:936)
+	at org.h2.command.Parser.parseColumnList(Parser.java:920)
+	at org.h2.command.Parser.parseInsertGivenTable(Parser.java:1258)
+	at org.h2.command.Parser.parseInsert(Parser.java:1222)
+	at org.h2.command.Parser.parsePrepared(Parser.java:431)
+	at org.h2.command.Parser.parse(Parser.java:335)
+	at org.h2.command.Parser.parse(Parser.java:307)
+	at org.h2.command.Parser.prepareCommand(Parser.java:278)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:205)
+	at SQLdialog.HolderH2.<init>(HolderH2.java:29)
+	at Htool.main(Htool.java:15)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.sun.javafx.application.LauncherImpl.launchApplicationWithArgs(LauncherImpl.java:389)
+	at com.sun.javafx.application.LauncherImpl.launchApplication(LauncherImpl.java:328)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.launcher.LauncherHelper$FXHelper.main(LauncherHelper.java:767)

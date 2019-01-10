@@ -10,10 +10,9 @@ import static staticVariable.PrimaryStage.primaryStage;
 
 public class Htool extends Application {
     public static void main(String[] args) {
-//        launch(args);
+        launch(args);
 
-        HolderH2 hh = new HolderH2();
-
+//        HolderH2 hh = new HolderH2();
 
     }
 

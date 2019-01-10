@@ -1,9 +1,15 @@
 package workWithFiles;
 
+import GUI.otherWindows.MyAlert;
+import SQLdialog.Holder;
+import SQLdialog.HolderH2;
+import SQLdialog.MessageRequest;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SplitMenuButton;
 
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -12,13 +18,13 @@ import static staticVariable.StaticVariables.listOfServers;
 public class ListOfServers {
     private ArrayList<MenuItem> itServers = new ArrayList<>();
     private ArrayList<String> servers = new ArrayList<>();
-    private String abrServer;
+    private String abrServer, name, ip;
 
     public String getAbrServer() {
         return abrServer;
     }
 
-    public void reading(){
+    public void reading1(){
         try {
             ReadFromFile rf = new ReadFromFile("src\\main\\resources\\OtherFiles\\servers.txt");
 
@@ -34,8 +40,7 @@ public class ListOfServers {
         }
     }
 
-    public void writing(String abr) throws IOException {
-        String name, ip;
+    public void writing1(String abr) throws IOException {
         name = listOfServers.get(abr)[0];
         ip = listOfServers.get(abr)[1];
         new WriteToFile("OtherFiles/servers.txt").writing(abr + ":" + name + ":" + ip + "\n");
@@ -68,5 +73,57 @@ public class ListOfServers {
                 }
             }
         }
+    }
+
+    public void writing(String abr){
+        name = listOfServers.get(abr)[0];
+        ip = listOfServers.get(abr)[1];
+
+        Holder holder = new HolderH2();
+        ((HolderH2) holder).connecting();
+//        создаем на всякий случай таблицу серверов, если она не создана
+        ((HolderH2) holder).executing(new MessageRequest().creatingTblServers());
+//        выясняем максимальный Id в таблице
+        int maxId = 1;
+        try{
+            ResultSet rs = ((HolderH2) holder).requesting(new MessageRequest().selectingMaxIdInTbl("tbl_Servers"));
+            while (rs.next()) {
+                maxId = rs.getInt(1);
+            }
+            rs.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+//        добавляем запись в таблицу
+                ((HolderH2) holder).executing(new MessageRequest().addingToTblServers(++maxId, abr, name, ip));
+                new MyAlert("Сервер с названием: " + name + " и ip адресом: " + ip + " был добавлен в таблицу серверов.");
+        holder.closeConnecting();
+    }
+
+    public void reading(){
+        Holder holder = new HolderH2();
+        ((HolderH2) holder).connecting();
+        try {
+            ResultSet tmpRs = holder.getConnection().getMetaData().getTables(null, null, "tbl_Servers", null);
+            ResultSet rs;
+            if ( tmpRs!= null) {
+                tmpRs.close();
+                rs = ((HolderH2) holder).requesting(new MessageRequest().listAllOfTbl("tbl_Servers"));
+                while (rs.next()) {
+                    listOfServers.put(rs.getString(2), new String[]{rs.getString(3), rs.getString(4)});
+                }
+            }
+            else tmpRs.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    public void clearing(String nameTbl){
+        Holder holder = new HolderH2();
+        ((HolderH2) holder).connecting();
+        if (((HolderH2) holder).requesting(new MessageRequest().listAllOfTbl(nameTbl)) != null){
+            ((HolderH2) holder).executing(new MessageRequest().deletingTbl(nameTbl));
+        }
+        holder.closeConnecting();
     }
 }
