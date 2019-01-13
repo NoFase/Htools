@@ -2,29 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44efbddd-621f-4e7c-bd4b-54bec136b817" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/TrayIconMy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingForTasks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/DspOFTK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterDspOFTK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logic/MyDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logic/MyTiming.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controllers/AddingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controllers/AddingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controllers/ListofServersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controllers/ListofServersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controllers/WorkPlaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controllers/WorkPlaceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Htool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Htool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SQLdialog/Holder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SQLdialog/Holder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SQLdialog/HolderH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SQLdialog/HolderH2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SQLdialog/MessageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SQLdialog/MessageRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/workWithFiles/ListOfServers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workWithFiles/ListOfServers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DB/H2/bin/org/h2/build/BuildBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DB/H2/bin/org/h2/build/BuildBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DB/H2/bin/org/h2/build/code/SwitchSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DB/H2/bin/org/h2/build/code/SwitchSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DB/H2/service/wrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DB/H2/service/wrapper.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DB/db_httol/mydb.db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DB/db_httol/mydb.db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/DB/db_httol/mydb.db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/DB/db_httol/mydb.db.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/listOfServers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/listOfServers.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/workWithUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/workWithUser.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DB/H2/bin/org/h2/build/BuildBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DB/H2/bin/org/h2/build/BuildBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DB/H2/bin/org/h2/build/code/SwitchSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DB/H2/bin/org/h2/build/code/SwitchSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DB/H2/service/wrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DB/H2/service/wrapper.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DB/db_httol/mydb.db.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DB/db_httol/mydb.db.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DB/db_httol/mydb.db.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DB/db_httol/mydb.db.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/ListofServersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/ListofServersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkPlaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/WorkPlaceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Htool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Htool.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SQLdialog/HolderH2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SQLdialog/HolderH2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/SQLdialog/MessageRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SQLdialog/MessageRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/workWithUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/workWithUser.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/network/TCPConnection$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/network/TCPConnection$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/workWithFiles/ListOfServers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/workWithFiles/ListOfServers.class" afterDir="false" />
     </list>
@@ -38,70 +35,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Htool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/Holder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/AddingController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/HolderH2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/workWithFiles/ListOfServers.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="112">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/TrayIconMy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#reading#0;class#ListOfServers#0" />
-                <element signature="method#writing#0;class#ListOfServers#0" />
+                <element signature="e#909#910#0" expanded="true" />
+                <element signature="e#955#956#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/ListofServersController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/MyTiming.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            <state relative-caret-position="97">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#62#63#0" expanded="true" />
+                <element signature="e#166#167#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/logic/MyDate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,57 +85,39 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingForTasks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="238">
+              <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/listOfServers.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/ConnectingController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="47" selection-start-line="47" selection-end-line="47" selection-end-column="61" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1546#1547#0" expanded="true" />
-                <element signature="e#1600#1601#0" expanded="true" />
+                <element signature="e#3129#3130#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/MessageRequest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/DspOFTK.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="30" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="30" />
+            <state relative-caret-position="64">
+              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
               <folding>
-                <element signature="e#109#110#0" expanded="true" />
-                <element signature="e#163#164#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1403#1404#0" expanded="true" />
-                <element signature="e#1443#1444#0" expanded="true" />
-                <element signature="e#1526#1527#0" expanded="true" />
-                <element signature="e#1575#1576#0" expanded="true" />
+                <element signature="e#192#193#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterDspOFTK.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+              <folding>
+                <element signature="e#137#138#0" expanded="true" />
+                <element signature="e#171#172#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,10 +144,15 @@
       <find>println</find>
       <find>50</find>
       <find>menu</find>
+      <find>resources</find>
+      <find>MaiController</find>
+      <find>ipServer</find>
+      <find>LGI</find>
     </findStrings>
     <replaceStrings>
       <replace>CSC</replace>
       <replace>30</replace>
+      <replace>MainController</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -199,14 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/staticVariable/PrimaryStage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/network/regt.java" />
-        <option value="$PROJECT_DIR$/src/main/java/network/TCPConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/network/TCPConnectionListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/ServerInner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/Command.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LGI.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LstPra.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LstTg.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Authority.java" />
@@ -214,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/main/java/staticVariable/StaticVariables.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/otherWindows/MyAlert.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/ShowUSR.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingWithServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLstPra.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLStVsbr.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLstMsbr.java" />
@@ -222,14 +175,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/fxml/connectingSample.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/workPlaceSample.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/ConnectingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/WorkPlaceController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterMessagesFromServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/sourceforge/jtds/jdbc/Driver.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQLdialog/RequestSender.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQLdialog/Request.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQLdialog/TMPSql.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CallIn.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQLdialog/HolderBD.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerPra.java" />
@@ -242,14 +193,25 @@
         <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/TblCusController.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQLdialog/HolderMS2000.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/SQLdialog/MessageRequest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Htool.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQLdialog/Holder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SQLdialog/HolderH2.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/AddingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/workWithFiles/ListOfServers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/ListofServersController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/listOfServers.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/ListofServersController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SQLdialog/HolderH2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/workWithFiles/ListOfServers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/TryIcon.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/TrayIconMy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/DsoOFTK.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/WorkPlaceController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingWithServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/MyDate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SQLdialog/MessageRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/DspOFTK.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterDspOFTK.java" />
+        <option value="$PROJECT_DIR$/src/main/java/logic/MyTiming.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingForTasks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Htool.java" />
       </list>
     </option>
   </component>
@@ -277,10 +239,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1920" />
-    <option name="y" value="1" />
-    <option name="width" value="960" />
-    <option name="height" value="1080" />
+    <option name="x" value="125" />
+    <option name="y" value="66" />
+    <option name="width" value="1288" />
+    <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -289,6 +251,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,15 +301,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dialogWithCommutators" type="462c0819:PsiDirectoryNode" />
-              <item name="customers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Htools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Htools" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dialogWithCommutators" type="462c0819:PsiDirectoryNode" />
               <item name="processor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -355,16 +309,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Htools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Htools" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Htools" type="b2602c69:ProjectViewProjectNode" />
@@ -379,7 +324,8 @@
               <item name="Htools" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="staticVariable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Htools" type="b2602c69:ProjectViewProjectNode" />
@@ -387,17 +333,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="fxml" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546754395189" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547371462736" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/librarys/jtds-1.3.1.jar!/" />
@@ -407,16 +351,17 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaProjects\Htools\src\main\java\net\sourceforge\jtds\jdbc" />
-      <recent name="D:\JavaProjects\Htools\src\main\resources\OtherFiles" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="net.sourceforge.jtds.jdbc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaProjects\Htools\src\main\resources\librarys" />
       <recent name="D:\JavaProjects\Htools\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProjects\Htools\src\main\java\logic" />
+      <recent name="D:\JavaProjects\Htools\src\main\java\net\sourceforge\jtds\jdbc" />
+      <recent name="D:\JavaProjects\Htools\src\main\resources\OtherFiles" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -471,10 +416,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1929" y="-8" width="1938" height="1098" extended-state="6" />
+    <frame x="-4" y="-4" width="1288" height="988" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2132116" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.9170507" visible="true" weight="0.19951534" />
+      <window_info id="Structure" order="1" sideWeight="0.08294931" side_tool="true" visible="true" weight="0.19951534" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -482,8 +427,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6162915" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36548766" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43317974" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36520737" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -491,7 +436,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32583067" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3248848" />
       <window_info anchor="right" id="Maven" order="0" weight="0.20461869" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24919441" />
@@ -508,198 +453,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/otherWindows/MyAlert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingWithServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLStVsbr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLstMsbr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/ShowUSR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-418">
-          <caret line="18" column="62" lean-forward="true" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/network/TCPConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/addingSample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="284" selection-start-line="12" selection-start-column="284" selection-end-line="12" selection-end-column="284" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/ServerInner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servers.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/workWithFiles/ReadFromFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/staticVariable/PrimaryStage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/OtherFiles/servers.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/net/URLClassLoader.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterMessagesFromServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/sourceforge/jtds/jdbc/Driver.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/RequestSender.java" />
-    <entry file="jar://$PROJECT_DIR$/src/main/resources/librarys/jtds-1.3.1.jar!/net/sourceforge/jtds/jdbc/Driver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/WorkPlaceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLstPra.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="21" column="71" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerSip.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerPra.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="114" selection-start-line="5" selection-start-column="106" selection-end-line="5" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CallIn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/TblCusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="963">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerESL.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/tblCustomer.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/connectingSample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="290" selection-start-line="14" selection-start-column="290" selection-end-line="14" selection-end-column="290" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/workPlaceSample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="284" selection-start-line="11" selection-start-column="284" selection-end-line="11" selection-end-column="284" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
@@ -786,47 +539,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Htool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/MessageRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="30" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="30" />
-          <folding>
-            <element signature="e#109#110#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1403#1404#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1526#1527#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/staticVariable/StaticVariables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#273#291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/Holder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="36" column="2" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
+        <state relative-caret-position="560">
+          <caret line="38" column="2" selection-start-line="38" selection-start-column="2" selection-end-line="38" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -835,17 +551,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/AddingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="560">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/ConnectingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
+        <state relative-caret-position="560">
           <caret line="47" selection-start-line="47" selection-end-line="47" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -855,53 +568,343 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/HolderH2.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/binding/NumberExpressionBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+        <state relative-caret-position="288">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/binding/DoubleExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/ReadOnlyDoubleProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/DoubleProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/DoublePropertyBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1603#1604#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/workWithFiles/ListOfServers.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/SimpleDoubleProperty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="379">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/ReadOnlyDoubleWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/binding/BooleanExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/ReadOnlyBooleanProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/stage/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#reading#0;class#ListOfServers#0" />
-            <element signature="method#writing#0;class#ListOfServers#0" />
+            <element signature="e#43457#43458#0" expanded="true" />
+            <element signature="e#43488#43489#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/BooleanProperty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="190">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/BooleanPropertyBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
           <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/SimpleBooleanProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/ListofServersController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/ReadOnlyBooleanWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        <state relative-caret-position="320">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/stage/Stage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="227" selection-start-line="227" selection-end-line="227" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#7505#7506#0" expanded="true" />
+            <element signature="e#42068#42069#0" expanded="true" />
+            <element signature="e#42090#42091#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/11/javafx-fxml-11-win.jar!/javafx/fxml/FXMLLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1152">
+          <folding>
+            <element signature="e#0#105316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="2600" selection-start-line="2600" selection-end-line="2600" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/listOfServers.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+        <state relative-caret-position="64">
+          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logs/ShowProblemClassAndMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/ListofServersController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="104" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/staticVariable/StaticVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#273#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LstTg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LstPra.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/WorkPlaceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/ConnectingForTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/TrayIconMy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#909#910#0" expanded="true" />
+            <element signature="e#955#956#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LGI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/workWithFiles/ListOfServers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="129" column="105" lean-forward="true" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="105" />
+          <folding>
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/HolderH2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="130" column="39" selection-start-line="130" selection-start-column="39" selection-end-line="130" selection-end-column="39" />
+          <folding>
+            <element signature="e#5276#5277#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingWithServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1416#1417#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterDspOFTK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+          <folding>
+            <element signature="e#137#138#0" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/DspOFTK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding>
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/MyDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/logic/MyTiming.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#62#63#0" expanded="true" />
+            <element signature="e#166#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/MessageRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="67" column="62" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
+          <folding>
+            <element signature="method#creatingTblServers#0;class#MessageRequest#0" />
+            <element signature="method#creatingTblLog#0;class#MessageRequest#0" />
+            <element signature="method#creatingTbl#0;class#MessageRequest#0" />
+            <element signature="method#addingToTblServers#0;class#MessageRequest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingForTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3129#3130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Htool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

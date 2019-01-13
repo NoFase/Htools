@@ -1,6 +1,7 @@
 package SQLdialog;
 
-import org.h2.util.ScriptReader;
+
+import java.util.Date;
 
 public class MessageRequest {
     private String message;
@@ -8,6 +9,7 @@ public class MessageRequest {
     public String allPraUser(){
         return "SELECT * FROM tbl_PRAUserData";
     }
+
     public String listingOfAllTables(){
         return "SELECT * FROM INFORMATION_SCHEMA.TABLES";
     }
@@ -20,6 +22,7 @@ public class MessageRequest {
                 "IP   VARCHAR(50) NOT NULL," +
                 "PRIMARY KEY ( id, abr, ip ));";
     }
+
     public String creatingTblLog(String abrCity){
         return "create table IF NOT EXISTS tbl_Log" + abrCity + "(" +
                 "ID         LONG        NOT NULL," +
@@ -28,6 +31,20 @@ public class MessageRequest {
                 "LOGIN      VARCHAR(50) NOT NULL," +
                 "IP         VARCHAR(50) NOT NULL," +
                 "COMMAND    STRING      NOT NULL," +
+                "PRIMARY KEY ( id ));";
+    }
+
+    public String creatingTbl(String nameTbl){
+        System.out.println("===> MessageRequest ---> method creatingTbl --> creating request");
+        return "create table IF NOT EXISTS tbl_Log" + nameTbl + "(" +
+                "ID             LONG        NOT NULL," +
+                "TIME           VARCHAR(50) NOT NULL," +
+                "TGNUMBER       VARCHAR(50) NOT NULL," +
+                "Free           VARCHAR(50) NOT NULL," +
+                "Busy           VARCHAR(50) NOT NULL," +
+                "Block          VARCHAR(50) NOT NULL," +
+                "Fault          VARCHAR(50) NOT NULL," +
+                "Installation   VARCHAR(50) NOT NULL," +
                 "PRIMARY KEY ( id ));";
     }
 
@@ -46,5 +63,10 @@ public class MessageRequest {
 
     public String deletingTbl (String nameTbl){
         return "DROP TABLE " + nameTbl;
+    }
+
+    public String addingToTblOFTK(String tblName, long id, Date time, String tgNum, String free, String busy, String block, String fault, String inst){
+        return "INSERT INTO " + tblName + " (id, time, tgnumber, free, busy, block, fault, installation) values (" +
+                id + ", " + time + ", '" + tgNum + "', '" + free + "', '" + busy + "', '" + block + "', '" + fault + "', '" + inst +"');";
     }
 }

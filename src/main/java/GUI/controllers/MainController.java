@@ -43,7 +43,7 @@ public class MainController {
 
     @FXML
     void workWithUser(ActionEvent event){
-
+        System.out.println("===> MainController ---> method workWithUser --> event");
         reOpenNewWindow("fxml/workWithUser.fxml");
 //        try {
 //            FXMLDocumentController(new Stage(), "fxml/workWithUser.fxml");
@@ -57,8 +57,10 @@ public class MainController {
 
     @FXML
     void appListOfServers(ActionEvent event){
+        System.out.println("===> MainController ---> method appListOfServers --> event");
         try {
             FXMLDocumentController(new Stage(), "fxml/listOfServers.fxml");
+            System.out.println("===> MainController ---> method appListOfServers --> load fxml");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -66,21 +68,25 @@ public class MainController {
 
     @FXML
     void appAddingServer(ActionEvent event) throws IOException {
+        System.out.println("===> MainController ---> method appAddingServer --> event");
         reOpenNewWindow("fxml/addingSample.fxml");
     }
 
     @FXML
     void appClose(ActionEvent event) {
+        System.out.println("===> MainController ---> method appClose --> event EXIT");
         System.exit(0);
     }
 
     @FXML
     void appConnectingServer(ActionEvent event) throws IOException {
+        System.out.println("===> MainController ---> method appConnectingServer --> event");
         reOpenNewWindow("fxml/connectingSample.fxml");
     }
 
     @FXML
     void appDisconnectingServer(ActionEvent event) {
+        System.out.println("===> MainController ---> method appDisconnectingServer --> event DISCONNECT");
         connection.disconnect();
     }
 
@@ -91,14 +97,17 @@ public class MainController {
     protected void FXMLDocumentController(Stage stage, String path) throws IOException {
         //Загрузили ресурс файла
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource(path));
+        System.out.println("===> MainController ---> method FXMLDocumentController --> load fxml:" + path);
         Scene scene = new Scene(root);
 //        Scene scene = new Scene(root, 1150, 780);
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
+        System.out.println("===> MainController ---> method FXMLDocumentController --> show Stage");
     }
 
     protected void reOpenNewWindow (String path) {
+        System.out.println("===> MainController ---> method reOpenNewWindow --> hide PrimaryStage");
         PrimaryStage.primaryStage.hide();
         //графический контейнер
         Stage stage = PrimaryStage.primaryStage;

@@ -103,7 +103,7 @@ public class WorkPlaceController extends MainController implements TCPConnection
         itConnect.setDisable(true);
         itShowUsr.setDisable(false);
         isConnection = true;
-        System.out.println("Connection ready to IP: " + ipServer);
+        System.out.println("===> WorkPlaceController ---> method onConnectionReady --> connect to: "+ ipServer);
 //        fldWorkLog.setStyle("-fx-text-fill: blue ;");
         fldWorkLog.appendText("Connection ready to IP: " + ipServer + INS);
 

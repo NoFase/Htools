@@ -48,16 +48,19 @@ public class ListOfServers {
 
     public void showing(SplitMenuButton mnServers){
 //        читаем из файла список серверов
+        System.out.println("===> ListOfServers ---> method showing --> start reading list of servers");
         reading();
 //        проверяем пустой ли список с серверами
         if (!listOfServers.isEmpty()) {
-
+            System.out.println("===> ListOfServers ---> method showing --> HashMap listOfServers isn't empty");
 //        проходим по всему списку серверов и инициируем коллекцию servers
             for (HashMap.Entry<String, String[]> entry : listOfServers.entrySet()) {
                 servers.add(entry.getKey());
             }
+            System.out.println("===> ListOfServers ---> method showing --> initialize HashMap servers from listOfServers");
 //        если списсок MenuItem пустой инициализируем его с абривиатур серверов
             if (itServers.size() == 0) {
+                System.out.println("===> ListOfServers ---> method showing --> menuItem is empty");
                 for (int i = 0; i < servers.size(); i++) {
                     itServers.add(new MenuItem(servers.get(i)));
 //        добавляем MenuItem в SplitMenuButton
@@ -78,10 +81,13 @@ public class ListOfServers {
     public void writing(String abr){
         name = listOfServers.get(abr)[0];
         ip = listOfServers.get(abr)[1];
+        System.out.println("===> ListOfServers ---> method writing --> adding servers into tbl_Servers, where abr: " + abr +
+                " name: " + name + " ip: " + ip);
 
         Holder holder = new HolderH2();
         ((HolderH2) holder).connecting();
 //        создаем на всякий случай таблицу серверов, если она не создана
+        System.out.println("===> ListOfServers ---> method writing --> create tbl_Servers");
         ((HolderH2) holder).executing(new MessageRequest().creatingTblServers());
 //        выясняем максимальный Id в таблице
         int maxId = 1;
@@ -91,34 +97,47 @@ public class ListOfServers {
                 maxId = rs.getInt(1);
             }
             rs.close();
+            System.out.println("===> ListOfServers ---> method writing --> request max Id in tbl_Servers, maxId = " + maxId);
         } catch (SQLException e) {
             e.printStackTrace();
         }
 //        добавляем запись в таблицу
+        System.out.println("===> ListOfServers ---> method writing --> adding in tbl_Servers new column");
                 ((HolderH2) holder).executing(new MessageRequest().addingToTblServers(++maxId, abr, name, ip));
                 new MyAlert("Сервер с названием: " + name + " и ip адресом: " + ip + " был добавлен в таблицу серверов.");
         holder.closeConnecting();
     }
 
     public void reading(){
+        System.out.println("===> ListOfServers ---> method reading --> start reading from db");
         Holder holder = new HolderH2();
         ((HolderH2) holder).connecting();
+        ResultSet rs;
         try {
+            System.out.println("===> ListOfServers ---> method reading --> Check. Is the tbl_Servers ?");
             ResultSet tmpRs = holder.getConnection().getMetaData().getTables(null, null, "tbl_Servers", null);
-            ResultSet rs;
             if ( tmpRs!= null) {
+                System.out.println(tmpRs.getString(1));
+                System.out.println("===> ListOfServers ---> method reading --> There is tbl_Servers");
                 tmpRs.close();
+                System.out.println("===> ListOfServers ---> method reading --> request to tbl_Servers");
                 rs = ((HolderH2) holder).requesting(new MessageRequest().listAllOfTbl("tbl_Servers"));
                 while (rs.next()) {
                     listOfServers.put(rs.getString(2), new String[]{rs.getString(3), rs.getString(4)});
                 }
             }
-            else tmpRs.close();
+            else {
+                System.out.println("===> ListOfServers ---> method reading --> There isn't tbl_Servers");
+                tmpRs.close();
+            }
         } catch (SQLException e) {
-            e.printStackTrace();
+            System.out.println("===> ListOfServers ---> method reading --> any problem with SQL");
+//            e.printStackTrace();
+            return;
         }
     }
     public void clearing(String nameTbl){
+        System.out.println("===> ListOfServers ---> method clearing --> start clearing tbl: " + nameTbl);
         Holder holder = new HolderH2();
         ((HolderH2) holder).connecting();
         if (((HolderH2) holder).requesting(new MessageRequest().listAllOfTbl(nameTbl)) != null){

@@ -23,20 +23,16 @@ public class ListofServersController {
     private AnchorPane panelListOfServers;
 
     @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
-
-    @FXML
     private TableView table;
 
     @FXML
     void appClear(ActionEvent event) {
+        System.out.println("===> ListofServersController ---> method appClear --> event");
         ListOfServers servers = new ListOfServers();
         servers.clearing("tbl_Servers");
         StaticVariables.listOfServers.clear();
         panelListOfServers.getScene().getWindow().hide();
+        System.out.println("===> ListofServersController ---> method appClear --> hide Scene");
     }
 
     @FXML
@@ -59,6 +55,7 @@ public class ListofServersController {
 
         ObservableList<ServerInner> list = getServerinnerList();
         table.setItems(list);
+        System.out.println("===> ListofServersController ---> method initialize --> finish initialize");
     }
 
     private ObservableList<ServerInner> getServerinnerList() {

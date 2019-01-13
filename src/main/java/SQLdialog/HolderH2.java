@@ -74,9 +74,11 @@ public class HolderH2 extends Holder{
 //            System.out.println("Ошибка SQL !");
 //            e.printStackTrace();
 //        }
+        System.out.println("===> HolderH2 ---> method CONSTRUCTOR --> was load");
     }
 
     public ResultSet requesting(String request){
+        System.out.println("===> HolderH2 ---> method requesting --> request: " + request + " to tbl");
         try {
             return statement.executeQuery(request);
         } catch (SQLException e) {
@@ -86,6 +88,7 @@ public class HolderH2 extends Holder{
         }
     }
     public void executing(String request){
+        System.out.println("===> HolderH2 ---> method executing --> execute: " + request + " to tbl");
         try {
             statement.execute(request);
         } catch (SQLException e) {
@@ -97,9 +100,10 @@ public class HolderH2 extends Holder{
         super.conPartOne = "jdbc:h2:~/src/main/resources/DB/db_httol/mydb";
         try {
             Class.forName(DB_Driver);
+            System.out.println("===> HolderH2 ---> method connecting --> loaded driver: " + DB_Driver);
             connection = DriverManager.getConnection(conPartOne);
             if (connection != null) {
-                System.out.println("Connected!");
+                System.out.println("===> HolderH2 ---> method connecting --> connected to jdbc:h2:~/src/main/resources/DB/db_httol/mydb");
                 statement = connection.createStatement();
             }
         } catch (ClassNotFoundException e) {
@@ -115,10 +119,16 @@ public class HolderH2 extends Holder{
         try {
             statement.close();
             connection.close();
+            System.out.println("===> HolderH2 ---> method closeConnecting --> close connection");
         } catch (SQLException e){
             System.out.println("Can't close connection");
             e.printStackTrace();
             return;
         }
+    }
+
+    @Override
+    public Connection getConnection() {
+        return connection;
     }
 }
