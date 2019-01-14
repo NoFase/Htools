@@ -1,6 +1,7 @@
 package GUI;
 
 
+import SQLdialog.H2ShowTgData;
 import logic.MyTiming;
 
 import java.awt.*;
@@ -51,6 +52,14 @@ public class TrayIconMy {
 
             }
         });
+        MenuItem showDataTg = new MenuItem("Show data");
+        showDataTg.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new H2ShowTgData();
+            }
+        });
+        trayMenu.add(showDataTg);
         trayMenu.add(item);
         trayMenu.add(timing);
 

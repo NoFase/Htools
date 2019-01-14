@@ -16,7 +16,11 @@ public class FilterDspOFTK {
             data[0] = value.split("\\s+")[1] + " " + value.split("\\s+")[2];
             data[1] = value.split("\\s+")[3];
         }
-        System.out.println("===> FilterDspOFTK ---> method getData --> data: " + data[0] + " " + data[1]);
-        return data;
+        if (data[0] != null) {
+            System.out.println("===> FilterDspOFTK ---> method getData --> data: " + data[0] + " " + data[1]);
+            return data;
+        }else {
+            return data;
+        }
     }
 }

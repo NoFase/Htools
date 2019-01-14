@@ -9,6 +9,8 @@ import network.TCPConnection;
 import network.TCPConnectionListener;
 
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.HashMap;
 
 import static staticVariable.StaticVariables.connection;
@@ -48,6 +50,7 @@ public class ConnectingForTasks implements TCPConnectionListener{
         else if (value.contains("Sum of trunk")) processor = true;
         if (processor) {
             if (value.contains("END")) {
+                System.out.println("===> ConnectingForTasks ---> method onReceiveString --> value contained END");
                 processor = false;
                 sendingToDB();
             } else {
@@ -60,14 +63,29 @@ public class ConnectingForTasks implements TCPConnectionListener{
     private void sendingToDB() {
         holderH2 = new HolderH2();
         String request = new MessageRequest().creatingTbl("tblSRTTG19");
+        holderH2.connecting();
+
+//        holderH2.executing(new MessageRequest().deletingTbl("tblSRTTG19"));
         holderH2.executing(request);
         System.out.println("===> ConnectingForTasks ---> method sendingToDB --> sent request to H2DB: " + request);
-        request = new MessageRequest().addingToTblOFTK("tblSRTTG19", 1, new MyDate().currentDate(), "19",
+        int maxId = 1;
+        try{
+            ResultSet rs =  holderH2.requesting(new MessageRequest().selectingMaxIdInTbl("tblSRTTG19"));
+            while (rs.next()) {
+                maxId = rs.getInt(1);
+            }
+            rs.close();
+            System.out.println("===> ConnectingForTasks ---> method sendingToDB --> request max Id in tblSRTTG19, maxId = " + maxId);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        request = new MessageRequest().addingToTblOFTK("tblSRTTG19", ++maxId, new MyDate().currentDate(), "19",
                 dataOftk.get("Free"), dataOftk.get("Busy"), dataOftk.get("Block"), dataOftk.get("Fault"), dataOftk.get("Installation"));
         holderH2.executing(request);
         System.out.println("===> ConnectingForTasks ---> method sendingToDB --> sent request to H2DB: " + request);
         holderH2.closeConnecting();
         dataOftk.clear();
+        holderH2.closeConnecting();
     }
 
     @Override
