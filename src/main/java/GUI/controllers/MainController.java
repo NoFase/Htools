@@ -118,4 +118,18 @@ public class MainController {
         }
     }
 
+    @FXML
+    public void appShowGraph(ActionEvent event) {
+        System.out.println("===> MainController ---> method appShowGraph --> event");
+//        reOpenNewWindow("src/main/resources/fxml/graphSample.fxml");
+        try {
+            FXMLDocumentController(new Stage(), "fxml/graphSample.fxml");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @FXML
+    private MenuItem itShowGraph;
 }

@@ -13,8 +13,11 @@ public class FilterDspOFTK {
             data[0] = value.split("\\s+")[1];
             data[1] = value.split("\\s+")[2];
         } else if (value.contains("Installation number")){
-            data[0] = value.split("\\s+")[1] + " " + value.split("\\s+")[2];
+//            data[0] = value.split("\\s+")[1] + " " + value.split("\\s+")[2];
+            data[0] = value.split("\\s+")[1];
             data[1] = value.split("\\s+")[3];
+
+            System.out.println("===> FilterDspOFTK ---> method getData --> data for installation: " + data[0] + " " + data[1]);
         }
         if (data[0] != null) {
             System.out.println("===> FilterDspOFTK ---> method getData --> data: " + data[0] + " " + data[1]);

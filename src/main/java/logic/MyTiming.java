@@ -28,44 +28,49 @@ public class MyTiming implements Runnable {
         ipServer = "10.140.27.8";
         loginName = "Smednyh";
         passwordForLogin = "SoftX3000";
-        ConnectingForTasks connectingForTasks = new ConnectingForTasks();
-//        while (!connectingForTasks.getConnected()){
-//            System.out.println("===> MyTiming ---> method run --> connected:" + connectingForTasks.getConnected());
+//        ConnectingForTasks connectingForTasks = new ConnectingForTasks();
+////        while (!connectingForTasks.getConnected()){
+////            System.out.println("===> MyTiming ---> method run --> connected:" + connectingForTasks.getConnected());
+////        }
+//
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
 //        }
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println("===> MyTiming ---> method run --> sending command DSP OFTK");
-        Command dspOftk = new DspOFTK();
-        String command = null;
-        while (command == null){
-            ((DspOFTK) dspOftk).setNumberTg("19");
-            command = dspOftk.creatingCommand();
-        }
-        connection.sendString(command);
+//        System.out.println("===> MyTiming ---> method run --> sending command DSP OFTK");
+//        Command dspOftk = new DspOFTK();
+//        String command = null;
+//        while (command == null){
+//            ((DspOFTK) dspOftk).setNumberTg("19");
+//            command = dspOftk.creatingCommand();
+//        }
+//        connection.sendString(command);
 
 
 
 
-//        TimerTask task = new TimerTask() {
-//            @Override
-//            public void run() {
-//                ipServer = "10.140.27.8";
-//                ConnectingForTasks connectingForTasks = new ConnectingForTasks();
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                ipServer = "10.140.27.8";
+                ConnectingForTasks connectingForTasks = new ConnectingForTasks();
 //                while (!connectingForTasks.getConnected());
-//                Command dspOftk = new DspOFTK();
-//                String command = null;
-//                while (command == null){
-//                ((DspOFTK) dspOftk).setNumberTg("19");
-//                command = dspOftk.creatingCommand();
-//                }
-//                connection.sendString(command);
-//            }
-//        };
-//        Timer timer = new Timer();
-//        timer.schedule(task, startTime, LONGPERIOD);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                Command dspOftk = new DspOFTK();
+                String command = null;
+                while (command == null){
+                ((DspOFTK) dspOftk).setNumberTg("19");
+                command = dspOftk.creatingCommand();
+                }
+                connection.sendString(command);
+            }
+        };
+        Timer timer = new Timer();
+        timer.schedule(task, startTime, LONGPERIOD);
     }
 }
