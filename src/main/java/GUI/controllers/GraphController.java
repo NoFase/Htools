@@ -10,9 +10,12 @@ import javafx.scene.chart.CategoryAxis;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Date;
 
 public class GraphController extends MainController {
     @FXML
@@ -26,7 +29,7 @@ public class GraphController extends MainController {
 
     @FXML
     void initialize() {
-        XYChart.Series<Number, Number> ser1 = new XYChart.Series<Number, Number>();
+        XYChart.Series<Date, Number> ser1 = new XYChart.Series<Date, Number>();
 //        XYChart.Series<Number, Number> ser2 = new XYChart.Series<Number, Number>();
 
 //        ObservableList<XYChart> data1 = FXCollections.observableArrayList();
@@ -39,10 +42,13 @@ public class GraphController extends MainController {
             rs = holder.requesting(new MessageRequest().listAllOfTbl("tblSRTTG19"));
             int i = 0;
             while (rs.next()) {
-                int x = Integer.parseInt(rs.getString(1));
+                long time = rs.getLong(2);
+                Date date = new Date();
+                String tt = String.format("%02d:%02d:%02d", time / 1000 / 3600, time / 1000 / 60 % 60, time / 1000 % 60);
+                System.out.println(tt);
                 int y = Integer.parseInt(rs.getString(5));
 //                System.out.println(x + " " + y);
-                ser1.getData().add(new XYChart.Data<Number, Number>(x, y));
+                ser1.getData().add(new XYChart.Data<Date, Number>(new Date(tt), y));
             }
             rs.close();
 
