@@ -3,6 +3,8 @@ package GUI.controllers;
 import java.io.*;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import GUI.Shema;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -122,12 +124,13 @@ public class MainController {
     public void appShowGraph(ActionEvent event) {
         System.out.println("===> MainController ---> method appShowGraph --> event");
 //        reOpenNewWindow("src/main/resources/fxml/graphSample.fxml");
-        try {
-            FXMLDocumentController(new Stage(), "fxml/graphSample.fxml");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            FXMLDocumentController(new Stage(), "fxml/graphSample.fxml");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
+        new Shema().start(new Stage());
     }
 
     @FXML
