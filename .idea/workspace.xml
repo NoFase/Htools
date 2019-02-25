@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44efbddd-621f-4e7c-bd4b-54bec136b817" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/GUI/Shema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/Cnacld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/Rtana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CnacldPfx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Route.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/SRT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/TrunkGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pfxAnalays/CnacldAnalyser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pfxAnalays/CnacldConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pfxAnalays/CommandSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pfxAnalays/CommandSenderRSC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pfxAnalays/DefaultConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pfxAnalays/NumberCrt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pfxAnalays/RSCConnect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pfxAnalays/Siren.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pfxAnalays/WorkerWithString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controllers/GraphController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controllers/GraphController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/graphSample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/graphSample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/GraphController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/GraphController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/graphSample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/graphSample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LGI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LGI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/staticVariable/StaticVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/staticVariable/StaticVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/GUI/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/GUI/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Htools.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dialogWithCommutators/commands/LGI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dialogWithCommutators/commands/LGI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/mainSample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/mainSample.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/staticVariable/StaticVariables.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/staticVariable/StaticVariables.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,88 +39,80 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterDspOFTK.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/CnacldConnect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+            <state relative-caret-position="147">
+              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/graphSample.fxml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/DefaultConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="109" lean-forward="true" selection-start-line="11" selection-start-column="109" selection-end-line="11" selection-end-column="109" />
+            <state relative-caret-position="635">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/staticVariable/StaticVariables.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/CommandSender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#178#179#0" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/RSCConnect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Shema.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/CommandSenderRSC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="25" selection-end-column="48" />
+            <state relative-caret-position="117">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#937#953#0" expanded="true" />
+                <element signature="e#184#185#0" expanded="true" />
+                <element signature="e#215#216#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/time/LocalDate.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/CnacldAnalyser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="467" column="12" selection-start-line="467" selection-start-column="12" selection-end-line="467" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/HolderH2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1659">
-              <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
-              <folding>
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/H2ShowTgData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="117" column="33" lean-forward="true" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/GraphController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="441">
+              <caret line="21" column="31" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,23 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/staticVariable/StaticVariables.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/otherWindows/MyAlert.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/ShowUSR.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLstPra.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLStVsbr.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterLstMsbr.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/addingSample.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/connectingSample.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/workPlaceSample.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/ConnectingController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterMessagesFromServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/sourceforge/jtds/jdbc/Driver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SQLdialog/RequestSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SQLdialog/Request.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SQLdialog/TMPSql.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CallIn.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SQLdialog/HolderBD.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerPra.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CustomerSip.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Customer.java" />
@@ -191,16 +184,33 @@
         <option value="$PROJECT_DIR$/src/main/java/GUI/TrayIconMy.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQLdialog/HolderH2.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterDspOFTK.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/logic/MyDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQLdialog/MessageRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingForTasks.java" />
         <option value="$PROJECT_DIR$/src/main/java/logic/MyTiming.java" />
         <option value="$PROJECT_DIR$/src/main/java/SQLdialog/H2ShowTgData.java" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/GraphController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/graphSample.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/GUI/Shema.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/pfxAnalays/Siren.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pfxAnalays/WorkerWithString.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LGI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/Cnacld.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/TrunkGroup.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/SRT.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Route.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CnacldPfx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pfxAnalays/NumberCrt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/staticVariable/StaticVariables.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pfxAnalays/CnacldAnalyser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pfxAnalays/CnacldConnect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pfxAnalays/DefaultConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pfxAnalays/RSCConnect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pfxAnalays/CommandSender.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/Rtana.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pfxAnalays/CommandSenderRSC.java" />
       </list>
     </option>
   </component>
@@ -279,6 +289,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dialogWithCommutators" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Htools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Htools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dialogWithCommutators" type="462c0819:PsiDirectoryNode" />
+              <item name="customers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Htools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Htools" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dialogWithCommutators" type="462c0819:PsiDirectoryNode" />
               <item name="processor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -304,7 +332,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="pfxAnalays" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Htools" type="b2602c69:ProjectViewProjectNode" />
@@ -329,14 +357,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Htools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Htools" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="fxml" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -346,7 +366,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548388984204" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551091903343" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/librarys/jtds-1.3.1.jar!/" />
@@ -356,17 +376,21 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="net.sourceforge.jtds.jdbc" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProjects\Htools\src\main\java\pfxAnalays" />
+      <recent name="D:\JavaProjects\Htools\src\main\java\logic" />
+      <recent name="D:\JavaProjects\Htools\src\main\java\net\sourceforge\jtds\jdbc" />
+      <recent name="D:\JavaProjects\Htools\src\main\resources\OtherFiles" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JavaProjects\Htools\src\main\resources\librarys" />
       <recent name="D:\JavaProjects\Htools\src\main\java" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaProjects\Htools\src\main\java\logic" />
-      <recent name="D:\JavaProjects\Htools\src\main\java\net\sourceforge\jtds\jdbc" />
-      <recent name="D:\JavaProjects\Htools\src\main\resources\OtherFiles" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="dialogWithCommutators.commands" />
+      <recent name="pfxAnalays" />
+      <recent name="dialogWithCommutators.customers" />
+      <recent name="net.sourceforge.jtds.jdbc" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -381,7 +405,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Shema">
+  <component name="RunManager" selected="Application.Htool">
     <configuration name="Htool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Htool" />
       <module name="Htools" />
@@ -416,8 +440,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Shema" />
         <item itemvalue="Application.Htool" />
+        <item itemvalue="Application.Shema" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -439,8 +463,8 @@
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8926554" visible="true" weight="0.19172932" />
-      <window_info id="Structure" order="1" sideWeight="0.107344635" side_tool="true" visible="true" weight="0.19172932" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.84782606" visible="true" weight="0.30988184" />
+      <window_info id="Structure" order="1" sideWeight="0.1521739" side_tool="true" visible="true" weight="0.30988184" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -448,7 +472,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290461" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21864952" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47118643" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36441585" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -457,7 +481,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32475883" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3242938" />
       <window_info anchor="right" id="Maven" order="0" weight="0.20461869" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.24919441" />
@@ -498,161 +522,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/DoublePropertyBase.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/SimpleDoubleProperty.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/ReadOnlyDoubleWrapper.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/binding/BooleanExpression.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/ReadOnlyBooleanProperty.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/stage/Window.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/BooleanProperty.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/BooleanPropertyBase.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/SimpleBooleanProperty.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/beans/property/ReadOnlyBooleanWrapper.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/stage/Stage.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/11/javafx-fxml-11-win.jar!/javafx/fxml/FXMLLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1152">
-          <folding>
-            <element signature="e#0#105316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/listOfServers.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/logs/ShowProblemClassAndMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/ListofServersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/staticVariable/StaticVariables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#273#291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LstTg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LstPra.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/WorkPlaceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/ConnectingForTasks.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LGI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingWithServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="38" selection-start-line="38" selection-end-line="38" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1485#1486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/DspOFTK.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/AddingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/workWithFiles/ListOfServers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="102" column="9" lean-forward="true" selection-start-line="92" selection-end-line="102" selection-end-column="9" />
-          <folding>
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/HolderBD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/sql/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="353" column="12" selection-start-line="353" selection-start-column="12" selection-end-line="353" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Htool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GUI/TrayIconMy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
           <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/network/TCPConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
@@ -662,14 +535,6 @@
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="314" selection-start-line="10" selection-start-column="268" selection-end-line="10" selection-end-column="314" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -703,77 +568,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/MessageRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="70" column="42" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
-          <folding>
-            <element signature="method#creatingTblServers#0;class#MessageRequest#0" />
-            <element signature="method#creatingTblLog#0;class#MessageRequest#0" />
-            <element signature="method#addingToTblServers#0;class#MessageRequest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/HolderH2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
-          <folding>
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingForTasks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterDspOFTK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/GraphController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="117" column="33" lean-forward="true" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/chart/NumberAxis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="694">
           <caret line="150" column="25" selection-start-line="150" selection-start-column="25" selection-end-line="150" selection-end-column="28" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/graphSample.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="109" lean-forward="true" selection-start-line="11" selection-start-column="109" selection-end-line="11" selection-end-column="109" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/javafx-src.zip!/javafx/scene/chart/CategoryAxis.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -796,30 +596,400 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/time/LocalDate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/GraphController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="467" column="12" selection-start-line="467" selection-start-column="12" selection-end-line="467" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/H2ShowTgData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="23" column="31" lean-forward="true" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        <state relative-caret-position="782">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Shema.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/H2ShowTgData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="25" selection-end-column="48" />
+        <state relative-caret-position="399">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#937#953#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/HolderH2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+          <folding>
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/time/LocalDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="467" column="12" selection-start-line="467" selection-start-column="12" selection-end-line="467" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/mainSample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="40" column="131" selection-start-line="40" selection-start-column="131" selection-end-line="40" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/Shema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/graphSample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="109" selection-start-line="11" selection-start-column="109" selection-end-line="11" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterDspOFTK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Htool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/Holder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/MessageRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="method#creatingTblServers#0;class#MessageRequest#0" />
+            <element signature="method#creatingTblLog#0;class#MessageRequest#0" />
+            <element signature="method#addingToTblServers#0;class#MessageRequest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SQLdialog/HolderBD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2478">
+          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/Siren.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingForTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="39" selection-start-line="39" selection-end-line="40" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/network/TCPConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/io/ObjectOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="341" column="22" selection-start-line="341" selection-start-column="22" selection-end-line="341" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/ConnectingWithServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1416#1417#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/DspOFTK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/processor/FilterMessagesFromServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LGI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LstTg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#136#137#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/LstPra.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/TrunkGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding>
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#237#238#0" expanded="true" />
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/SRT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#393#394#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/Route.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding>
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/customers/CnacldPfx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/NumberCrt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/WorkerWithString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GUI/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/DefaultConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/CnacldConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/RSCConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/CommandSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/staticVariable/StaticVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/CnacldAnalyser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/Cnacld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialogWithCommutators/commands/Rtana.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="e#168#169#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pfxAnalays/CommandSenderRSC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
           </folding>
         </state>
       </provider>

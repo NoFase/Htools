@@ -1,6 +1,7 @@
 package staticVariable;
 
 
+import dialogWithCommutators.customers.CnacldPfx;
 import javafx.scene.control.TextArea;
 import dialogWithCommutators.customers.Customer;
 import network.TCPConnection;
@@ -19,6 +20,9 @@ public class StaticVariables {
     public static TextArea fldPlace = new TextArea();
     public static String actualNumber = null;
     public static int increment = 0;
+    public static HashMap<String, CnacldPfx> cnacldPfxs = new HashMap<>();
+    public static String tmpPfx;
+    public static String curPfx;
 
     {
         isCommands.put("LSTPRA", false);

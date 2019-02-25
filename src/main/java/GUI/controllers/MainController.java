@@ -13,6 +13,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import pfxAnalays.CnacldConnect;
+import pfxAnalays.DefaultConnection;
+import pfxAnalays.RSCConnect;
 import staticVariable.PrimaryStage;
 
 import static staticVariable.StaticVariables.connection;
@@ -90,6 +93,17 @@ public class MainController {
     void appDisconnectingServer(ActionEvent event) {
         System.out.println("===> MainController ---> method appDisconnectingServer --> event DISCONNECT");
         connection.disconnect();
+    }
+
+    @FXML
+    void appAnalPfx(ActionEvent event){
+//        Siren siren = new Siren();
+        DefaultConnection connect;
+        connect = new CnacldConnect();
+        connect.run();
+        while (connect.isAlive()) {}
+        System.out.println("===> MainController ---> method appAnalPfx --> finish collect CNACLD");
+        connect = new RSCConnect();
     }
 
     @FXML
