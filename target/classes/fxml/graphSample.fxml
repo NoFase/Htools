@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+
+<AreaChart fx:id="aChart" xAxis="lnX" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.controllers.GraphController">
+   <xAxis>
+      <NumberAxis fx:id="lnX" label="дата" lowerBound="1" upperBound="20" tickUnit="5" side="BOTTOM" />
+   </xAxis>
+   <yAxis>
+      <NumberAxis fx:id="lnY" label="СЛ" side="LEFT" tickLabelGap="5.0" tickLength="5.0" upperBound="30.0" />
+   </yAxis>
+</AreaChart>

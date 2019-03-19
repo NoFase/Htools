@@ -6,12 +6,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import logic.MyDate;
 
 import static staticVariable.PrimaryStage.primaryStage;
 
 public class Htool extends Application {
     public static void main(String[] args) {
-        System.out.println("===> Htool ---> method main --> start program");
+        System.out.println(new MyDate().currentDate().toString() + " ===> Htool ---> method main --> start program");
         new TrayIconMy();
         launch(args);
 

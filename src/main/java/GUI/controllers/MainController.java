@@ -2,7 +2,11 @@ package GUI.controllers;
 
 import java.io.*;
 import java.net.URL;
+import java.util.Map;
 import java.util.ResourceBundle;
+
+import GUI.Shema;
+import dialogWithCommutators.customers.CnacldPfx;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,8 +15,12 @@ import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import pfxAnalays.CnacldConnect;
+import pfxAnalays.DefaultConnection;
+import pfxAnalays.RSCConnect;
 import staticVariable.PrimaryStage;
 
+import static staticVariable.StaticVariables.cnacldPfxs;
 import static staticVariable.StaticVariables.connection;
 
 public class MainController {
@@ -91,7 +99,43 @@ public class MainController {
     }
 
     @FXML
+    void appAnalPfx(ActionEvent event){
+//        Siren siren = new Siren();
+        DefaultConnection connect;
+        connect = new CnacldConnect();
+
+        Thread ccc = new Thread(connect);
+        ccc.run();
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        try {
+            br.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("===> MainController ---> method appAnalPfx --> before FOR");
+
+        boolean check = true;
+//        while (check) {
+//            if (!cnacldPfxs.isEmpty()) {
+////            System.out.println(((CnacldConnect) connect).isLive() + " <---");
+//                System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!");
+//                check = false;
+//            }
+//        }
+
+        for (Map.Entry<String, CnacldPfx> entry: cnacldPfxs.entrySet()){
+            System.out.printf("%s - %s ", entry.getKey(), entry.getValue().getRsc());
+            System.out.println();
+        }
+
+//        DefaultConnection con = new RSCConnect();
+//        con.run();
+
+    }
+
+    @FXML
     void initialize() {
+
     }
 
     protected void FXMLDocumentController(Stage stage, String path) throws IOException {
@@ -118,4 +162,19 @@ public class MainController {
         }
     }
 
+    @FXML
+    public void appShowGraph(ActionEvent event) {
+        System.out.println("===> MainController ---> method appShowGraph --> event");
+//        reOpenNewWindow("src/main/resources/fxml/graphSample.fxml");
+//        try {
+//            FXMLDocumentController(new Stage(), "fxml/graphSample.fxml");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
+        new Shema().start(new Stage());
+    }
+
+    @FXML
+    private MenuItem itShowGraph;
 }

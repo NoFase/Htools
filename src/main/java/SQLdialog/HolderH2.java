@@ -25,6 +25,10 @@ public class HolderH2 extends Holder{
             "\tipServer  VARCHAR(15) NOT NULL,\n" +
             ");\n";
 
+    @Override
+    public Statement getStatement() {
+        return statement;
+    }
 
     public HolderH2() {
 //        super.conPartOne = "jdbc:h2:~/src/main/resources/DB/db_httol/mydb";
@@ -88,9 +92,11 @@ public class HolderH2 extends Holder{
         }
     }
     public void executing(String request){
-        System.out.println("===> HolderH2 ---> method executing --> execute: " + request + " to tbl");
         try {
+            System.out.println(statement.toString());
+            System.out.println(request);
             statement.execute(request);
+            System.out.println("===> HolderH2 ---> method executing --> execute: " + request);
         } catch (SQLException e) {
             System.out.println("Can't send request: " + request + " to sql...");
             e.printStackTrace();

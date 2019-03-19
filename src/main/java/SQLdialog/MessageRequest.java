@@ -1,7 +1,7 @@
 package SQLdialog;
 
 
-import java.util.Date;
+import java.sql.Date;
 
 public class MessageRequest {
     private String message;
@@ -36,15 +36,15 @@ public class MessageRequest {
 
     public String creatingTbl(String nameTbl){
         System.out.println("===> MessageRequest ---> method creatingTbl --> creating request");
-        return "create table IF NOT EXISTS tbl_Log" + nameTbl + "(" +
-                "ID             LONG        NOT NULL," +
-                "TIME           VARCHAR(50) NOT NULL," +
-                "TGNUMBER       VARCHAR(50) NOT NULL," +
-                "Free           VARCHAR(50) NOT NULL," +
-                "Busy           VARCHAR(50) NOT NULL," +
-                "Block          VARCHAR(50) NOT NULL," +
-                "Fault          VARCHAR(50) NOT NULL," +
-                "Installation   VARCHAR(50) NOT NULL," +
+        return "create table IF NOT EXISTS " + nameTbl + " (" +
+                "ID             INT        , " +
+                "TIME           BIGINT , " +
+                "TGNUMBER       VARCHAR(50) , " +
+                "Free           VARCHAR(50) , " +
+                "Busy           VARCHAR(50) , " +
+                "Block          VARCHAR(50) , " +
+                "Fault          VARCHAR(50) , " +
+                "Installation   VARCHAR(50) , " +
                 "PRIMARY KEY ( id ));";
     }
 
@@ -65,8 +65,9 @@ public class MessageRequest {
         return "DROP TABLE " + nameTbl;
     }
 
-    public String addingToTblOFTK(String tblName, long id, Date time, String tgNum, String free, String busy, String block, String fault, String inst){
+    public String addingToTblOFTK(String tblName, int id, Date time, String tgNum, String free, String busy, String block, String fault, String inst){
+        System.out.println(time.getTime());
         return "INSERT INTO " + tblName + " (id, time, tgnumber, free, busy, block, fault, installation) values (" +
-                id + ", " + time + ", '" + tgNum + "', '" + free + "', '" + busy + "', '" + block + "', '" + fault + "', '" + inst +"');";
+                id + ", " + time.getTime() + ", '" + tgNum + "', '" + free + "', '" + busy + "', '" + block + "', '" + fault + "', '" + inst +"');";
     }
 }

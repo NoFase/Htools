@@ -8,6 +8,8 @@ import java.util.Date;
 
 public class MyDate {
 
+
+
     private SimpleDateFormat form = new SimpleDateFormat("yyyy&MM&dd hh&mm");
     private LocalDateTime localDate;
 
@@ -40,6 +42,10 @@ public class MyDate {
     }
     public String localDate(){
         return form.format(new Date().getTime());
+    }
+
+    public SimpleDateFormat getForm() {
+        return form;
     }
 
 }
