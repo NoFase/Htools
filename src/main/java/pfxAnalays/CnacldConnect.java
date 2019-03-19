@@ -5,16 +5,29 @@ import static staticVariable.StaticVariables.tmpPfx;
 import static staticVariable.StaticVariables.curPfx;
 
 public class CnacldConnect extends DefaultConnection {
-    private Thread commandSender;
+    private CommandSender commandSender;
+    private boolean live = true;
+    Thread thread;
+
+    {
+        System.out.println("Start class CnacldConnect");
+    }
+
+    public boolean isLive() {
+        return live;
+    }
 
     private boolean isSendingCommand = false;
     @Override
     public void onReceiveString(TCPConnection tcpConnection, String value) {
 //        инициализируем обект для запуска комманд LST CNACLD
-        if (commandSender == null) commandSender = new CommandSender(conn);
+        if (commandSender == null) {
+            thread = new Thread(commandSender = new CommandSender(conn));
+        }
         checkingReceivingString(value);
         if (isLogin && !isSendingCommand) {
-            commandSender.run();
+//            commandSender.run();
+            thread.run();
             isSendingCommand = true;
         }
         if (isLogin && isSendingCommand) {
@@ -25,7 +38,10 @@ public class CnacldConnect extends DefaultConnection {
             conn.disconnect();
             curPfx = null;
             tmpPfx = null;
-            interrupt();
+            System.out.println("===> CnacldConnect ---> method onReceiveString --> check interrupt");
+        }
+        if (commandSender.isFinishPfx()) {
+            live = false;
         }
     }
 }

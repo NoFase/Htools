@@ -8,6 +8,7 @@ public class Cnacld implements Command {
         command = new StringBuffer("LST CNACLD: LP=").append("0, PFX=K'");
         command.append(pfx);
         command.append(", QSTY=ANALOG;");
+//        System.out.println("===> Cnacld ---> method constructor --> create command:" + command);
     }
 
     @Override

@@ -3,16 +3,29 @@ package dialogWithCommutators.commands;
 
 import static staticVariable.StaticVariables.*;
 
-public class LGI implements Command{
+    public class LGI implements Command{
 
-    @Override
+    private String login;
+    private String password;
+
+        public LGI(String login, String password) {
+            this.login = login;
+            this.password = password;
+        }
+
+        public LGI() {
+            login = loginName;
+            password = passwordForLogin;
+        }
+
+        @Override
     public String creatingCommand() {
-        if (loginName.isEmpty() | loginName.contains("none") | loginName == null | loginName == "")
+        if (login.isEmpty() | login.contains("none") | login == null | login == "")
             System.out.println("not initialise Name For Login");
-        if (passwordForLogin.isEmpty() | passwordForLogin.contains("none") | passwordForLogin == null | passwordForLogin == "")
+        if (password.isEmpty() | password.contains("none") | password == null | password == "")
             System.out.println("no password");
         StringBuffer command = new StringBuffer().append("LGI:op=\"")
-                .append(loginName).append("\", PWD =\"").append(passwordForLogin)
+                .append(login).append("\", PWD =\"").append(password)
                 .append("\", SER=\"").append(ipLocalWS).append("---O&M System\";")
                 .append("\r\n");
         return command.toString();

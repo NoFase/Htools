@@ -15,12 +15,16 @@ public class CnacldAnalyser {
             cnacld.setPfx(tmpPfx);
             cnacld.setRsc(value.split("=")[1].trim());
             cnacldPfxs.put(tmpPfx, cnacld);
+            int rnd = (int)(Math.random()*100);
+            System.out.println("===> CnacldAnalyser ---> method constructor --> add to cnacldPfxs with RSC " + rnd);
         }
         if (value.contains("No matching result is found")) {
             cnacld = new CnacldPfx();
             cnacld.setPfx(curPfx);
             cnacld.setRsc("absents");
             cnacldPfxs.put(curPfx, cnacld);
+            int rnd = (int)(Math.random()*100);
+            System.out.println("===> CnacldAnalyser ---> method constructor --> add to cnacldPfxs without RSC " + rnd);
         }
     }
 }

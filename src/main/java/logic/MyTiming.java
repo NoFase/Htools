@@ -14,7 +14,7 @@ import java.util.TimerTask;
 import static staticVariable.StaticVariables.*;
 
 public class MyTiming implements Runnable {
-    private final long LONGPERIOD = 900000;
+    private final long LONGPERIOD = 300000;
     public MyTiming() {
         System.out.println("===> MyTiming ---> method CONSTRUCTOR --> Class initialised");
     }
@@ -65,7 +65,7 @@ public class MyTiming implements Runnable {
                 Command dspOftk = new DspOFTK();
                 String command = null;
                 while (command == null){
-                ((DspOFTK) dspOftk).setNumberTg("19");
+                ((DspOFTK) dspOftk).setNumberTg("110");
                 command = dspOftk.creatingCommand();
                 }
                 connection.sendString(command);

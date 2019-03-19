@@ -16,8 +16,10 @@ public class CommandSenderRSC extends Thread {
     }
 
     public void run(){
+        System.out.println("====> CommandSenderRSC ---> method run ---> start FOR");
         for (Map.Entry<String, CnacldPfx> entry: cnacldPfxs.entrySet()){
             String rsc = entry.getValue().getRsc();
+            System.out.println(rsc);
             if (!rsc.equals("absents") || !rsc.equals("NULL")) {
                 conn.sendString(new Rtana(rsc).creatingCommand());
             }

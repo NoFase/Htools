@@ -8,7 +8,7 @@ import java.io.IOException;
 
 import static staticVariable.StaticVariables.*;
 
-public class DefaultConnection extends Thread implements TCPConnectionListener{
+public class DefaultConnection implements TCPConnectionListener, Runnable{
 
     TCPConnection conn;
     public boolean isLogin = false;
@@ -29,7 +29,7 @@ public class DefaultConnection extends Thread implements TCPConnectionListener{
 
     @Override
     public void onConnectionReady(TCPConnection tcpConnection) {
-        System.out.println("===> ConnectingForTasks ---> method onConnectionReady --> Connection ready to IP: " + ipServer);
+        System.out.println("===> DefaultConnection ---> method onConnectionReady --> Connection ready to IP: 10.136.33.130" + ipServer);
         conn.sendString(new LGI().creatingCommand());
     }
 
@@ -40,7 +40,7 @@ public class DefaultConnection extends Thread implements TCPConnectionListener{
 
     @Override
     public void onDisconnect(TCPConnection tcpConnection) {
-        System.out.println("===> pfxAnalays --->NumberCrt ---> method onDisconnect --> Disconnected from IP: 10.136.33.130" );
+        System.out.println("===> DefaultConnection ---> method onDisconnect --> Disconnected from IP: 10.136.33.130" + ipServer);
         isLogin = false;
     }
 
@@ -53,7 +53,9 @@ public class DefaultConnection extends Thread implements TCPConnectionListener{
         if (value == null) conn.disconnect();
         if (value.contains("logged in successfully")) {
             isLogin = true;
+            System.out.println("===> DefaultConnection ---> method checkingReceivingString --> login" );
+            System.out.println("-------->login to SX" + isLogin);
         }
-            System.out.println(value);
+//            System.out.println(value);
     }
 }

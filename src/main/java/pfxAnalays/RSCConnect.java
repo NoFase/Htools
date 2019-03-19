@@ -4,10 +4,20 @@ import network.TCPConnection;
 
 public class RSCConnect extends DefaultConnection {
 
-    private Thread commandSender;
+    {
+        System.out.println("Start class RSCConnect");
+    }
+
+    private CommandSenderRSC commandSender = null;
     @Override
     public void onReceiveString(TCPConnection tcpConnection, String value) {
         checkingReceivingString(value);
-        if (commandSender == null) commandSender = new CommandSenderRSC(conn);
+        if (commandSender == null) {
+            System.out.println("====> RSCConnect ---> method onReceiveString ---> initialyse commandSender");
+            commandSender = new CommandSenderRSC(conn);
+            commandSender.run();
+        }
+
+        System.out.println(value);
     }
 }
