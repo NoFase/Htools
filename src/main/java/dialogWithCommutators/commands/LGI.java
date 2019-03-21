@@ -1,11 +1,13 @@
 package dialogWithCommutators.commands;
 
-
 import static staticVariable.StaticVariables.*;
 
     public class LGI implements Command{
 
-    private String login;
+    private final String LOCALWS = "10.188.4.154";
+
+
+        private String login;
     private String password;
 
         public LGI(String login, String password) {
@@ -26,7 +28,7 @@ import static staticVariable.StaticVariables.*;
             System.out.println("no password");
         StringBuffer command = new StringBuffer().append("LGI:op=\"")
                 .append(login).append("\", PWD =\"").append(password)
-                .append("\", SER=\"").append(ipLocalWS).append("---O&M System\";")
+                .append("\", SER=\"").append(LOCALWS).append("---O&M System\";")
                 .append("\r\n");
         return command.toString();
     }

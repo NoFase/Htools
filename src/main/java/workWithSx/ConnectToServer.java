@@ -15,10 +15,15 @@ public class ConnectToServer implements TCPConnectionListener, Runnable {
     private String login, password, serverIp;
     private final int PORT = 6000;
     private TCPConnection connection;
+    private boolean loginStatus;
 
     private boolean sendingMode = false;
     private BinaryOperator<String> operator = (s1, s2) -> new LGI(s1, s2).creatingCommand();
     private AnalyzerString analyzerType;
+
+    public boolean isLogin() {
+        return loginStatus;
+    }
 
     public void setAnalyzerType(AnalyzerString analyzerType) {
         this.analyzerType = analyzerType;
@@ -68,6 +73,7 @@ public class ConnectToServer implements TCPConnectionListener, Runnable {
 
     @Override
     public void onDisconnect(TCPConnection tcpConnection) {
+        loginStatus = false;
         System.out.println("===> ConnectToServer -> onDisconnect() -> " +
                 new MyDate().currentDate().toString() +
                 " Disconnected from IP: " + serverIp);
@@ -84,6 +90,10 @@ public class ConnectToServer implements TCPConnectionListener, Runnable {
             !value.contains("END")&&
             analyzerType != null){
             analyzerType.checking(value);
+        } else if (value.contains("logged in successfully")) {
+            loginStatus = true;
+            System.out.println("===> ConnectToServer -> analysis() -> login" +
+                    new MyDate().currentDate().toString());
         }
     }
 }
