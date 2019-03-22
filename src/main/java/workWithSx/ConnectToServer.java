@@ -3,6 +3,7 @@ package workWithSx;
 import dialogWithCommutators.commands.LGI;
 import logic.MyDate;
 import logic.trigers.AnalyzerString;
+import logic.trigers.MyTriger;
 import network.TCPConnection;
 import network.TCPConnectionListener;
 
@@ -20,6 +21,11 @@ public class ConnectToServer implements TCPConnectionListener, Runnable {
     private boolean sendingMode = false;
     private BinaryOperator<String> operator = (s1, s2) -> new LGI(s1, s2).creatingCommand();
     private AnalyzerString analyzerType;
+    private MyTriger triger;
+
+    public void setTriger(MyTriger triger) {
+        this.triger = triger;
+    }
 
     public boolean isLogin() {
         return loginStatus;
@@ -35,6 +41,10 @@ public class ConnectToServer implements TCPConnectionListener, Runnable {
 
     public void setSendingMode(boolean sendingMode) {
         this.sendingMode = sendingMode;
+    }
+
+    public TCPConnection getConnection() {
+        return connection;
     }
 
     public ConnectToServer(String login, String password, String serverIp) {
@@ -85,15 +95,16 @@ public class ConnectToServer implements TCPConnectionListener, Runnable {
     }
 
     private void analysis(String value) {
-        sendingMode = (value.contains("Number of results =")) ? false : true;
-        if (!value.contains("--------------------") ||
-            !value.contains("END")&&
-            analyzerType != null){
-            analyzerType.checking(value);
+        if (value.contains("Number of results =")) {
+            sendingMode = false;
         } else if (value.contains("logged in successfully")) {
             loginStatus = true;
             System.out.println("===> ConnectToServer -> analysis() -> login" +
                     new MyDate().currentDate().toString());
+        } else if (triger != null ||
+                !value.contains("--------------------") ||
+                !value.contains("END")) {
+            triger.filtering(value);
         }
     }
 }
